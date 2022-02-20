@@ -5,14 +5,20 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 637807176388837088
     m_Hash: 3866062461
+=======
+      ticks: 637809346631868588
+    m_Hash: 2687951044
+>>>>>>> main
   m_LockFileStatus:
     m_FilePath: C:/Users/17134/Documents/GitHub/UnityGame/Game app/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 637807176811430992
     m_Hash: 972400617
 m_EmbeddedPackageManifests:
@@ -1255,6 +1261,1440 @@ m_ResolvedPackages:
   type: 
   description: 'TextMeshPro is the ultimate text solution for Unity. It''s the perfect
     replacement for Unity''s UI Text and the legacy Text Mesh.
+=======
+      ticks: 637809346632283423
+    m_Hash: 2378517213
+m_EmbeddedPackageManifests:
+  m_ManifestsStatus: {}
+m_PackageAssets:
+  m_Packages:
+    m_ResolvedPackages:
+    - packageId: com.unity.2d.animation@5.0.10
+      testable: 0
+      isDirectDependency: 1
+      version: 5.0.10
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.2d.animation@5.0.10
+      assetPath: Packages/com.unity.2d.animation
+      name: com.unity.2d.animation
+      displayName: 2D Animation
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: 2D Animation provides all the necessary tooling and runtime components
+        for skeletal animation using Sprites.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.15-preview.1
+        - 1.0.15-preview.2
+        - 1.0.15-preview.3
+        - 1.0.15-preview.4
+        - 1.0.15-preview.5
+        - 1.0.16-preview
+        - 1.0.16-preview.1
+        - 1.0.16-preview.2
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
+        - 2.0.0-preview.3
+        - 2.1.0-preview.1
+        - 2.1.0-preview.2
+        - 2.1.0-preview.4
+        - 2.1.0-preview.5
+        - 2.1.0-preview.7
+        - 2.2.0-preview.1
+        - 2.2.0-preview.4
+        - 2.2.0-preview.5
+        - 2.2.1-preview.1
+        - 2.2.1-preview.2
+        - 3.0.2
+        - 3.0.3
+        - 3.0.4
+        - 3.0.5
+        - 3.0.6
+        - 3.0.8
+        - 3.1.0
+        - 3.1.1
+        - 3.2.1
+        - 3.2.2
+        - 3.2.3
+        - 3.2.4
+        - 3.2.5
+        - 3.2.6
+        - 3.2.9
+        - 3.2.10
+        - 3.2.11
+        - 3.2.13
+        - 3.2.14
+        - 3.2.15
+        - 3.2.16
+        - 4.0.0
+        - 4.0.1
+        - 4.1.0
+        - 4.1.1
+        - 4.2.1
+        - 4.2.2
+        - 4.2.3
+        - 4.2.4
+        - 4.2.5
+        - 4.2.6
+        - 4.2.8
+        - 5.0.0
+        - 5.0.1
+        - 5.0.2
+        - 5.0.3
+        - 5.0.4
+        - 5.0.5
+        - 5.0.6
+        - 5.0.7
+        - 5.0.8
+        - 5.0.9
+        - 5.0.10
+        - 5.1.0
+        - 6.0.0-pre.1
+        - 6.0.0-pre.2
+        - 6.0.1
+        - 6.0.3
+        - 6.0.4
+        - 6.0.5
+        - 6.0.7
+        - 7.0.0-pre.2
+        - 7.0.0-pre.3
+        - 7.0.0
+        - 7.0.1
+        - 7.0.2
+        - 7.0.3
+        - 8.0.0-pre.3
+        - 8.0.0-pre.4
+        - 8.0.0
+        compatible:
+        - 5.0.10
+        - 5.1.0
+        verified: 5.0.10
+      dependencies:
+      - name: com.unity.2d.common
+        version: 4.0.4
+      - name: com.unity.mathematics
+        version: 1.1.0
+      - name: com.unity.2d.sprite
+        version: 1.0.0
+      - name: com.unity.modules.animation
+        version: 1.0.0
+      - name: com.unity.modules.uielements
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.2d.common
+        version: 4.0.4
+      - name: com.unity.2d.sprite
+        version: 1.0.0
+      - name: com.unity.modules.uielements
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.uielementsnative
+        version: 1.0.0
+      - name: com.unity.mathematics
+        version: 1.1.0
+      - name: com.unity.modules.animation
+        version: 1.0.0
+      keywords:
+      - 2d
+      - animation
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637750142350000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/2d.git
+        revision: 341b7316671d7e6703a7627f67c5fab262c4f1ac
+        path: 
+    - packageId: com.unity.2d.pixel-perfect@4.0.1
+      testable: 0
+      isDirectDependency: 1
+      version: 4.0.1
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.2d.pixel-perfect@4.0.1
+      assetPath: Packages/com.unity.2d.pixel-perfect
+      name: com.unity.2d.pixel-perfect
+      displayName: 2D Pixel Perfect
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'The 2D Pixel Perfect package contains the Pixel Perfect Camera
+        component which ensures your pixel art remains crisp and clear at different
+        resolutions, and stable in motion.
+
+
+        It is a single component that
+        makes all the calculations needed to scale the viewport with resolution changes,
+        removing the hassle from the user. The user can adjust the definition of
+        the pixel art rendered within the camera viewport through the component settings,
+        as well preview any changes immediately in Game view by using the Run in
+        Edit Mode feature.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview
+        - 1.0.1-preview
+        - 2.0.2
+        - 2.0.3
+        - 2.0.4
+        - 2.1.0
+        - 3.0.0
+        - 3.0.1
+        - 3.0.2
+        - 4.0.0
+        - 4.0.1
+        - 5.0.0-pre.1
+        - 5.0.0-pre.2
+        - 5.0.0
+        - 5.0.1
+        compatible:
+        - 4.0.1
+        verified: 4.0.1
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - pixel
+      - perfect
+      - 2D
+      - sprite
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637328350910000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/2d.git
+        revision: 7d7470f4ca0ea8353d4c9640b3b6ae9d1ebd9c1d
+        path: 
+    - packageId: com.unity.2d.psdimporter@4.1.3
+      testable: 0
+      isDirectDependency: 1
+      version: 4.1.3
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.2d.psdimporter@4.1.3
+      assetPath: Packages/com.unity.2d.psdimporter
+      name: com.unity.2d.psdimporter
+      displayName: 2D PSD Importer
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: A ScriptedImporter for importing Adobe Photoshop PSB (Photoshop
+        Big) file format. The ScriptedImporter is currently targeted for users who
+        wants to create multi Sprite character animation using Unity 2D Animation
+        Package.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview.1
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.1.0-preview.1
+        - 1.1.0-preview.3
+        - 1.2.0-preview.1
+        - 1.2.0-preview.3
+        - 1.2.0-preview.4
+        - 2.0.2
+        - 2.0.3
+        - 2.0.4
+        - 2.0.5
+        - 2.0.7
+        - 2.1.0
+        - 2.1.3
+        - 2.1.4
+        - 2.1.5
+        - 2.1.6
+        - 2.1.8
+        - 2.1.9
+        - 2.1.10
+        - 3.0.0
+        - 3.1.1
+        - 3.1.3
+        - 3.1.4
+        - 3.1.5
+        - 3.1.6
+        - 3.1.7
+        - 4.0.0
+        - 4.0.1
+        - 4.0.2
+        - 4.1.0
+        - 4.1.1
+        - 4.1.2
+        - 4.1.3
+        - 4.2.0
+        - 5.0.0-pre.1
+        - 5.0.0-pre.2
+        - 5.0.1
+        - 5.0.3
+        - 5.0.4
+        - 5.0.6
+        - 6.0.0-pre.2
+        - 6.0.0-pre.3
+        - 6.0.0-pre.4
+        - 6.0.0
+        - 6.0.1
+        - 6.0.2
+        - 7.0.0-pre.3
+        - 7.0.0-pre.4
+        - 7.0.0
+        compatible:
+        - 4.1.3
+        - 4.2.0
+        verified: 4.1.3
+      dependencies:
+      - name: com.unity.2d.common
+        version: 4.0.4
+      - name: com.unity.2d.animation
+        version: 5.0.10
+      - name: com.unity.2d.sprite
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.2d.common
+        version: 4.0.4
+      - name: com.unity.2d.sprite
+        version: 1.0.0
+      - name: com.unity.modules.uielements
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.uielementsnative
+        version: 1.0.0
+      - name: com.unity.2d.animation
+        version: 5.0.10
+      - name: com.unity.mathematics
+        version: 1.1.0
+      - name: com.unity.modules.animation
+        version: 1.0.0
+      keywords:
+      - 2d
+      - psdimporter
+      - assetimporter
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637750142410000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/2d.git
+        revision: 341b7316671d7e6703a7627f67c5fab262c4f1ac
+        path: 
+    - packageId: com.unity.2d.sprite@1.0.0
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.0
+      source: 2
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.2d.sprite@1.0.0
+      assetPath: Packages/com.unity.2d.sprite
+      name: com.unity.2d.sprite
+      displayName: 2D Sprite
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: Use Unity Sprite Editor Window to create and edit Sprite asset
+        properties like pivot, borders and Physics shape
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0
+        compatible:
+        - 1.0.0
+        verified: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - 2d
+      - sprite
+      - sprite editor window
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
+    - packageId: com.unity.2d.spriteshape@5.1.7
+      testable: 0
+      isDirectDependency: 1
+      version: 5.1.7
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.2d.spriteshape@5.1.7
+      assetPath: Packages/com.unity.2d.spriteshape
+      name: com.unity.2d.spriteshape
+      displayName: 2D SpriteShape
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: SpriteShape Runtime & Editor Package contains the tooling and
+        the runtime component that allows you to create very organic looking spline
+        based 2D worlds. It comes with intuitive configurator and a highly performant
+        renderer.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.10-preview.2
+        - 1.0.11-preview
+        - 1.0.12-preview
+        - 1.0.12-preview.1
+        - 1.0.14-preview.2
+        - 2.0.0-preview.4
+        - 2.0.0-preview.5
+        - 2.0.0-preview.7
+        - 2.0.0-preview.8
+        - 2.0.0-preview.9
+        - 2.1.0-preview.2
+        - 2.1.0-preview.6
+        - 2.1.0-preview.7
+        - 2.1.0-preview.10
+        - 2.1.0-preview.11
+        - 3.0.1
+        - 3.0.2
+        - 3.0.4
+        - 3.0.5
+        - 3.0.6
+        - 3.0.7
+        - 3.0.8
+        - 3.0.9
+        - 3.0.10
+        - 3.0.11
+        - 3.0.12
+        - 3.0.13
+        - 3.0.14
+        - 3.0.15
+        - 3.0.16
+        - 3.0.17
+        - 3.0.18
+        - 4.0.0
+        - 4.0.1
+        - 4.0.2
+        - 4.0.3
+        - 4.1.0
+        - 4.1.1
+        - 4.1.2
+        - 4.1.3
+        - 4.1.4
+        - 4.1.5
+        - 5.0.0
+        - 5.0.1
+        - 5.0.2
+        - 5.1.0
+        - 5.1.1
+        - 5.1.2
+        - 5.1.3
+        - 5.1.4
+        - 5.1.5
+        - 5.1.6
+        - 5.1.7
+        - 5.2.0
+        - 6.0.0-pre.1
+        - 6.0.0-pre.2
+        - 6.0.0
+        - 6.0.1
+        - 6.0.2
+        - 7.0.0-pre.2
+        - 7.0.0-pre.3
+        - 7.0.0
+        - 7.0.2
+        - 7.0.3
+        - 8.0.0-pre.4
+        - 8.0.0-pre.5
+        - 8.0.0
+        compatible:
+        - 5.1.7
+        - 5.2.0
+        verified: 5.1.7
+      dependencies:
+      - name: com.unity.mathematics
+        version: 1.1.0
+      - name: com.unity.2d.common
+        version: 4.0.4
+      - name: com.unity.2d.path
+        version: 4.0.2
+      - name: com.unity.modules.physics2d
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.mathematics
+        version: 1.1.0
+      - name: com.unity.2d.common
+        version: 4.0.4
+      - name: com.unity.2d.sprite
+        version: 1.0.0
+      - name: com.unity.modules.uielements
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.uielementsnative
+        version: 1.0.0
+      - name: com.unity.2d.path
+        version: 4.0.2
+      - name: com.unity.modules.physics2d
+        version: 1.0.0
+      keywords:
+      - 2d
+      - shape
+      - spriteshape
+      - smartsprite
+      - spline
+      - terrain2d
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637750142490000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/2d.git
+        revision: 341b7316671d7e6703a7627f67c5fab262c4f1ac
+        path: 
+    - packageId: com.unity.2d.tilemap@1.0.0
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.0
+      source: 2
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.2d.tilemap@1.0.0
+      assetPath: Packages/com.unity.2d.tilemap
+      name: com.unity.2d.tilemap
+      displayName: 2D Tilemap Editor
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: 2D Tilemap Editor is a package that contains editor functionalities
+        for editing Tilemaps.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0
+        compatible:
+        - 1.0.0
+        verified: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - 2d
+      - Tilemap
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
+    - packageId: com.unity.collab-proxy@1.15.7
+      testable: 0
+      isDirectDependency: 1
+      version: 1.15.7
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.collab-proxy@1.15.7
+      assetPath: Packages/com.unity.collab-proxy
+      name: com.unity.collab-proxy
+      displayName: Version Control
+      author:
+        name: 
+        email: 
+        url: 
+      category: Editor
+      type: 
+      description: The Version Control package gives you the ability to use either
+        Collaborate or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic
+        SCM for Unity (beta), a Plastic SCM subscription is required. Learn more
+        about how you can get started for free by visiting plasticscm.com.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.2.3-preview
+        - 1.2.4-preview
+        - 1.2.6
+        - 1.2.7
+        - 1.2.9
+        - 1.2.11
+        - 1.2.15
+        - 1.2.16
+        - 1.2.17-preview.3
+        - 1.3.2
+        - 1.3.3
+        - 1.3.4
+        - 1.3.5
+        - 1.3.6
+        - 1.3.7
+        - 1.3.8
+        - 1.3.9
+        - 1.4.9
+        - 1.5.7
+        - 1.6.0
+        - 1.7.1
+        - 1.8.0
+        - 1.9.0
+        - 1.10.2
+        - 1.11.2
+        - 1.12.5
+        - 1.13.5
+        - 1.14.1
+        - 1.14.4
+        - 1.14.7
+        - 1.14.9
+        - 1.14.12
+        - 1.14.13
+        - 1.15.1
+        - 1.15.4
+        - 1.15.7
+        - 1.15.9
+        - 1.15.12
+        - 1.15.13
+        - 2.0.0-preview.6
+        - 2.0.0-preview.8
+        - 2.0.0-preview.15
+        - 2.0.0-preview.17
+        - 2.0.0-preview.20
+        - 2.0.0-preview.21
+        - 2.0.0-preview.22
+        - 2.1.0-preview.3
+        - 2.1.0-preview.5
+        - 2.1.0-preview.6
+        compatible:
+        - 1.15.7
+        - 1.15.9
+        - 1.15.12
+        - 1.15.13
+        - 2.0.0-preview.6
+        - 2.0.0-preview.8
+        - 2.0.0-preview.15
+        - 2.0.0-preview.17
+        - 2.0.0-preview.20
+        - 2.0.0-preview.21
+        - 2.0.0-preview.22
+        - 2.1.0-preview.3
+        - 2.1.0-preview.5
+        - 2.1.0-preview.6
+        verified: 1.15.13
+      dependencies:
+      - name: com.unity.nuget.newtonsoft-json
+        version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      resolvedDependencies:
+      - name: com.unity.nuget.newtonsoft-json
+        version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      keywords:
+      - backup
+      - cloud
+      - collab
+      - collaborate
+      - collaboration
+      - control
+      - plastic
+      - plasticscm
+      - source
+      - team
+      - teams
+      - version
+      - vcs
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637744672890000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
+        revision: d208594e5483cdf10d303b6ee17df4d6bf58d3de
+        path: 
+    - packageId: com.unity.device-simulator@3.0.3-preview
+      testable: 0
+      isDirectDependency: 1
+      version: 3.0.3-preview
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.device-simulator@3.0.3-preview
+      assetPath: Packages/com.unity.device-simulator
+      name: com.unity.device-simulator
+      displayName: Device Simulator
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Device Simulator is an alternative to the traditional Unity editor
+        Game window. By simulating Screen and SystemInfo class behavior, Device Simulator
+        aims to give an accurate picture of how an app will look on a device.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview
+        - 1.1.0-preview
+        - 1.2.0-preview
+        - 1.3.0-preview
+        - 2.0.0-preview
+        - 2.1.0-preview
+        - 2.1.1-preview
+        - 2.2.0-preview
+        - 2.2.1-preview
+        - 2.2.2-preview
+        - 2.2.3-preview
+        - 2.2.4-preview
+        - 3.0.0-preview
+        - 3.0.1-preview
+        - 3.0.2-preview
+        - 3.0.3-preview
+        compatible:
+        - 1.0.0-preview
+        - 1.1.0-preview
+        - 1.2.0-preview
+        - 1.3.0-preview
+        - 2.0.0-preview
+        - 2.1.0-preview
+        - 2.1.1-preview
+        - 2.2.0-preview
+        - 2.2.1-preview
+        - 2.2.2-preview
+        - 2.2.3-preview
+        - 2.2.4-preview
+        - 3.0.0-preview
+        - 3.0.1-preview
+        - 3.0.2-preview
+        - 3.0.3-preview
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - Device
+      - Simulator
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637723169670000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.com/Unity-Technologies/com.unity.device-simulator.git
+        revision: 45f5dce42e9c1f891f83d5d31a3d4180027c5d24
+        path: 
+    - packageId: com.unity.ide.rider@2.0.7
+      testable: 0
+      isDirectDependency: 1
+      version: 2.0.7
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.ide.rider@2.0.7
+      assetPath: Packages/com.unity.ide.rider
+      name: com.unity.ide.rider
+      displayName: JetBrains Rider Editor
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: The JetBrains Rider Editor package provides an integration for
+        using the JetBrains Rider IDE as a code editor for Unity. It adds support
+        for generating .csproj files for code completion and auto-discovery of installations.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.2
+        - 1.0.6
+        - 1.0.8
+        - 1.1.0
+        - 1.1.1
+        - 1.1.2-preview
+        - 1.1.2-preview.2
+        - 1.1.3-preview.1
+        - 1.1.4-preview
+        - 1.1.4
+        - 1.2.0-preview
+        - 1.2.1
+        - 2.0.0-preview
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
+        - 2.0.5
+        - 2.0.7
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.0.4
+        - 3.0.5
+        - 3.0.6
+        - 3.0.7
+        - 3.0.9
+        - 3.0.10
+        - 3.0.12
+        compatible:
+        - 1.0.2
+        - 1.0.6
+        - 1.0.8
+        - 1.1.0
+        - 1.1.1
+        - 1.1.2-preview
+        - 1.1.2-preview.2
+        - 1.1.3-preview.1
+        - 1.1.4-preview
+        - 1.1.4
+        - 1.2.0-preview
+        - 1.2.1
+        - 2.0.0-preview
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
+        - 2.0.5
+        - 2.0.7
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.0.4
+        - 3.0.5
+        - 3.0.6
+        - 3.0.7
+        - 3.0.9
+        - 3.0.10
+        - 3.0.12
+        verified: 2.0.7
+      dependencies:
+      - name: com.unity.test-framework
+        version: 1.1.1
+      resolvedDependencies:
+      - name: com.unity.test-framework
+        version: 1.1.29
+      - name: com.unity.ext.nunit
+        version: 1.0.6
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637334461080000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
+        revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
+        path: 
+    - packageId: com.unity.ide.visualstudio@2.0.12
+      testable: 0
+      isDirectDependency: 1
+      version: 2.0.12
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.ide.visualstudio@2.0.12
+      assetPath: Packages/com.unity.ide.visualstudio
+      name: com.unity.ide.visualstudio
+      displayName: Visual Studio Editor
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Code editor integration for supporting Visual Studio as code editor
+        for unity. Adds support for generating csproj files for intellisense purposes,
+        auto discovery of installations, etc.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.2
+        - 1.0.3
+        - 1.0.4
+        - 1.0.9
+        - 1.0.10
+        - 1.0.11
+        - 2.0.0
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
+        - 2.0.5
+        - 2.0.7
+        - 2.0.8
+        - 2.0.9
+        - 2.0.11
+        - 2.0.12
+        - 2.0.14
+        compatible:
+        - 1.0.2
+        - 1.0.3
+        - 1.0.4
+        - 1.0.9
+        - 1.0.10
+        - 1.0.11
+        - 2.0.0
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
+        - 2.0.5
+        - 2.0.7
+        - 2.0.8
+        - 2.0.9
+        - 2.0.11
+        - 2.0.12
+        - 2.0.14
+        verified: 2.0.14
+      dependencies:
+      - name: com.unity.test-framework
+        version: 1.1.9
+      resolvedDependencies:
+      - name: com.unity.test-framework
+        version: 1.1.29
+      - name: com.unity.ext.nunit
+        version: 1.0.6
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637720564750000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
+        revision: 8d436ff053b9c59677b5e9799208143553cd02d9
+        path: 
+    - packageId: com.unity.ide.vscode@1.2.4
+      testable: 0
+      isDirectDependency: 1
+      version: 1.2.4
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.ide.vscode@1.2.4
+      assetPath: Packages/com.unity.ide.vscode
+      name: com.unity.ide.vscode
+      displayName: Visual Studio Code Editor
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Code editor integration for supporting Visual Studio Code as code
+        editor for unity. Adds support for generating csproj files for intellisense
+        purposes, auto discovery of installations, etc.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.2
+        - 1.0.3
+        - 1.0.7
+        - 1.1.0
+        - 1.1.2
+        - 1.1.3
+        - 1.1.4
+        - 1.2.0
+        - 1.2.1
+        - 1.2.2
+        - 1.2.3
+        - 1.2.4
+        - 1.2.5
+        compatible:
+        - 1.0.2
+        - 1.0.3
+        - 1.0.7
+        - 1.1.0
+        - 1.1.2
+        - 1.1.3
+        - 1.1.4
+        - 1.2.0
+        - 1.2.1
+        - 1.2.2
+        - 1.2.3
+        - 1.2.4
+        - 1.2.5
+        verified: 1.2.5
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637660806170000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git+https://github.com/Unity-Technologies/com.unity.ide.vscode.git
+        revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
+        path: 
+    - packageId: com.unity.mobile.android-logcat@1.2.3
+      testable: 0
+      isDirectDependency: 1
+      version: 1.2.3
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.mobile.android-logcat@1.2.3
+      assetPath: Packages/com.unity.mobile.android-logcat
+      name: com.unity.mobile.android-logcat
+      displayName: Android Logcat
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: "Android Logcat package adds support for displaying log messages
+        coming from Android devices in Unity Editor. Click the 'View documentation'
+        link above for more information.\n\nThe window can be accessed in Unity Editor
+        via 'Window > Analysis > Android Logcat', or simply by pressing 'Alt+6' on
+        Windows or 'Option+6' on macOS. \n\nMake sure to have Android module loaded
+        and switch to Android build target in 'Build Settings' window if the menu
+        doesn't exist."
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.1.5-preview
+        - 0.2.7-preview
+        - 1.0.0
+        - 1.0.1-preview
+        - 1.0.3-preview
+        - 1.1.0
+        - 1.1.1
+        - 1.2.0-preview
+        - 1.2.0
+        - 1.2.1
+        - 1.2.2
+        - 1.2.3
+        compatible:
+        - 0.1.5-preview
+        - 0.2.7-preview
+        - 1.0.0
+        - 1.0.1-preview
+        - 1.0.3-preview
+        - 1.1.0
+        - 1.1.1
+        - 1.2.0-preview
+        - 1.2.0
+        - 1.2.1
+        - 1.2.2
+        - 1.2.3
+        verified: 1.2.3
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - Mobile
+      - Android
+      - Logcat
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637625737880000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git+https://github.com/Unity-Technologies/com.unity.mobile.logcat.git
+        revision: 59c5911d3f6465a7ecf9b03c8ad8ed681b549613
+        path: 
+    - packageId: com.unity.mobile.notifications@1.4.2
+      testable: 0
+      isDirectDependency: 1
+      version: 1.4.2
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.mobile.notifications@1.4.2
+      assetPath: Packages/com.unity.mobile.notifications
+      name: com.unity.mobile.notifications
+      displayName: Mobile Notifications
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'Mobile Notifications package adds support for scheduling local
+        repeatable or one-time notifications on iOS and Android.
+
+
+        Requires
+        iOS 10 and Android 4.4 or above.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview.4
+        - 1.0.0-preview.5
+        - 1.0.0-preview.7
+        - 1.0.0-preview.8
+        - 1.0.0-preview.9
+        - 1.0.0-preview.10
+        - 1.0.0-preview.13
+        - 1.0.0-preview.17
+        - 1.0.0-preview.21
+        - 1.0.0-preview.23
+        - 1.0.2
+        - 1.0.3-preview
+        - 1.0.3-preview.3
+        - 1.0.3-preview.4
+        - 1.0.3-preview.5
+        - 1.0.3-preview.6
+        - 1.0.3
+        - 1.0.4-preview.1
+        - 1.0.4-preview.2
+        - 1.0.4-preview.3
+        - 1.0.4-preview.4
+        - 1.0.4-preview.5
+        - 1.0.4-preview.6
+        - 1.0.4-preview.9
+        - 1.1.0-preview
+        - 1.2.0-preview
+        - 1.2.1-preview
+        - 1.3.0
+        - 1.3.2
+        - 1.4.1
+        - 1.4.2
+        - 2.0.0
+        compatible:
+        - 1.0.0-preview.4
+        - 1.0.0-preview.5
+        - 1.0.0-preview.7
+        - 1.0.0-preview.8
+        - 1.0.0-preview.9
+        - 1.0.0-preview.10
+        - 1.0.0-preview.13
+        - 1.0.0-preview.17
+        - 1.0.0-preview.21
+        - 1.0.0-preview.23
+        - 1.0.2
+        - 1.0.3-preview
+        - 1.0.3-preview.3
+        - 1.0.3-preview.4
+        - 1.0.3-preview.5
+        - 1.0.3-preview.6
+        - 1.0.3
+        - 1.0.4-preview.1
+        - 1.0.4-preview.2
+        - 1.0.4-preview.3
+        - 1.0.4-preview.4
+        - 1.0.4-preview.5
+        - 1.0.4-preview.6
+        - 1.0.4-preview.9
+        - 1.1.0-preview
+        - 1.2.0-preview
+        - 1.2.1-preview
+        - 1.3.0
+        - 1.3.2
+        - 1.4.1
+        - 1.4.2
+        - 2.0.0
+        verified: 1.4.2
+      dependencies:
+      - name: com.unity.modules.androidjni
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.androidjni
+        version: 1.0.0
+      keywords:
+      - Android
+      - iOS
+      - Notifications
+      - Mobile
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637635896040000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git+https://github.com/Unity-Technologies/com.unity.mobile.notifications.git
+        revision: 6e1b6e1acbe5d585c8d9557e82a9b2b274aecfa5
+        path: 
+    - packageId: com.unity.test-framework@1.1.29
+      testable: 0
+      isDirectDependency: 1
+      version: 1.1.29
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.test-framework@1.1.29
+      assetPath: Packages/com.unity.test-framework
+      name: com.unity.test-framework
+      displayName: Test Framework
+      author:
+        name: 
+        email: 
+        url: 
+      category: Unity Test Framework
+      type: 
+      description: Test framework for running Edit mode and Play mode tests in Unity.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.4-preview
+        - 0.0.29-preview
+        - 1.0.0
+        - 1.0.7
+        - 1.0.9
+        - 1.0.11
+        - 1.0.12
+        - 1.0.13
+        - 1.0.14
+        - 1.0.16
+        - 1.0.17
+        - 1.0.18
+        - 1.1.0
+        - 1.1.1
+        - 1.1.2
+        - 1.1.3
+        - 1.1.5
+        - 1.1.8
+        - 1.1.9
+        - 1.1.11
+        - 1.1.13
+        - 1.1.14
+        - 1.1.16
+        - 1.1.18
+        - 1.1.19
+        - 1.1.20
+        - 1.1.22
+        - 1.1.24
+        - 1.1.26
+        - 1.1.27
+        - 1.1.29
+        - 1.1.30
+        - 1.1.31
+        - 2.0.1-pre.12
+        - 2.0.1-pre.18
+        compatible:
+        - 1.1.29
+        - 1.1.30
+        - 1.1.31
+        - 2.0.1-pre.12
+        - 2.0.1-pre.18
+        verified: 1.1.31
+      dependencies:
+      - name: com.unity.ext.nunit
+        version: 1.0.6
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ext.nunit
+        version: 1.0.6
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      keywords:
+      - Test
+      - TestFramework
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637647922650000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git+https://github.com/Unity-Technologies/com.unity.test-framework.git
+        revision: dac53542acdab7a12e9ebf111ac588d0e53cf483
+        path: 
+    - packageId: com.unity.textmeshpro@3.0.6
+      testable: 0
+      isDirectDependency: 1
+      version: 3.0.6
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.textmeshpro@3.0.6
+      assetPath: Packages/com.unity.textmeshpro
+      name: com.unity.textmeshpro
+      displayName: TextMeshPro
+      author:
+        name: 
+        email: 
+        url: 
+      category: Text Rendering
+      type: 
+      description: 'TextMeshPro is the ultimate text solution for Unity. It''s the
+        perfect replacement for Unity''s UI Text and the legacy Text Mesh.
+>>>>>>> main
 
 
     Powerful and
@@ -3487,6 +4927,7 @@ m_ResolvedPackages:
   description: 'This package defines common components used by multiple Game Service
     packages.
 
+<<<<<<< HEAD
     These are standardized and aim to unify the overall experience
     of working with Game Services packages.'
   status: 4
@@ -3931,3 +5372,304 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.6.3
     nextVersion: 
+=======
+        These are standardized and aim to unify the overall
+        experience of working with Game Services packages.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.1
+        - 1.1.0-pre.7
+        - 1.1.0-pre.8
+        - 1.1.0-pre.9
+        - 1.1.0-pre.10
+        - 1.1.0-pre.11
+        - 1.1.0-pre.41
+        - 1.1.0-pre.69
+        compatible:
+        - 1.0.1
+        - 1.1.0-pre.7
+        - 1.1.0-pre.8
+        - 1.1.0-pre.9
+        - 1.1.0-pre.10
+        - 1.1.0-pre.11
+        - 1.1.0-pre.41
+        - 1.1.0-pre.69
+        verified: 1.0.1
+      dependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637604883250000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+        revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
+        path: 
+    - packageId: com.unity.mathematics@1.1.0
+      testable: 0
+      isDirectDependency: 0
+      version: 1.1.0
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.mathematics@1.1.0
+      assetPath: Packages/com.unity.mathematics
+      name: com.unity.mathematics
+      displayName: Mathematics
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Unity's C# SIMD math library providing vector types and math functions
+        with a shader like syntax.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.12-preview.2
+        - 0.0.12-preview.5
+        - 0.0.12-preview.8
+        - 0.0.12-preview.10
+        - 0.0.12-preview.11
+        - 0.0.12-preview.13
+        - 0.0.12-preview.17
+        - 0.0.12-preview.19
+        - 0.0.12-preview.20
+        - 1.0.0-preview.1
+        - 1.0.1
+        - 1.1.0-preview.1
+        - 1.1.0
+        - 1.2.1
+        - 1.2.4
+        - 1.2.5
+        compatible:
+        - 0.0.12-preview.2
+        - 0.0.12-preview.5
+        - 0.0.12-preview.8
+        - 0.0.12-preview.10
+        - 0.0.12-preview.11
+        - 0.0.12-preview.13
+        - 0.0.12-preview.17
+        - 0.0.12-preview.19
+        - 0.0.12-preview.20
+        - 1.0.0-preview.1
+        - 1.0.1
+        - 1.1.0-preview.1
+        - 1.1.0
+        - 1.2.1
+        - 1.2.4
+        - 1.2.5
+        verified: 1.2.5
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 636984649280000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git@github.com:Unity-Technologies/Unity.Mathematics.git
+        revision: 0a3dfafaf606098ea681de4c4be60f3aac63b773
+        path: 
+    - packageId: com.unity.2d.common@4.0.4
+      testable: 0
+      isDirectDependency: 0
+      version: 4.0.4
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.2d.common@4.0.4
+      assetPath: Packages/com.unity.2d.common
+      name: com.unity.2d.common
+      displayName: 2D Common
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: 2D Common is a package that contains shared functionalities that
+        are used by most of the other 2D packages.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.9-preview.1
+        - 1.0.9-preview.2
+        - 1.0.10-preview
+        - 1.0.11-preview.1
+        - 1.1.0-preview.1
+        - 1.1.0-preview.2
+        - 1.2.0-preview.1
+        - 2.0.1
+        - 2.0.2
+        - 2.1.0
+        - 2.1.1
+        - 3.0.0
+        - 3.0.1
+        - 4.0.0
+        - 4.0.1
+        - 4.0.2
+        - 4.0.3
+        - 4.0.4
+        - 4.1.0
+        - 5.0.0-pre.1
+        - 5.0.0-pre.2
+        - 5.0.0
+        - 6.0.0-pre.2
+        - 6.0.0-pre.3
+        - 6.0.0-pre.4
+        - 6.0.0
+        - 6.0.1
+        - 6.0.2
+        - 7.0.0-pre.3
+        - 7.0.0-pre.4
+        - 7.0.0
+        compatible:
+        - 4.0.4
+        - 4.1.0
+        verified: 4.0.4
+      dependencies:
+      - name: com.unity.2d.sprite
+        version: 1.0.0
+      - name: com.unity.modules.uielements
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.2d.sprite
+        version: 1.0.0
+      - name: com.unity.modules.uielements
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.uielementsnative
+        version: 1.0.0
+      keywords:
+      - 2d
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637750142160000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/2d.git
+        revision: 341b7316671d7e6703a7627f67c5fab262c4f1ac
+        path: 
+    - packageId: com.unity.2d.path@4.0.2
+      testable: 0
+      isDirectDependency: 0
+      version: 4.0.2
+      source: 1
+      resolvedPath: C:\Users\Faith\OneDrive\Desktop\Game\UnityProject\Game app\Library\PackageCache\com.unity.2d.path@4.0.2
+      assetPath: Packages/com.unity.2d.path
+      name: com.unity.2d.path
+      displayName: 2D Path
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: "2D Path provides tooling to edit shapes (polygons and B\xE9zier
+        splines) in EditorWindows and the SceneView."
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview.1
+        - 1.0.0-preview.4
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
+        - 2.0.4
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 2.1.1
+        - 3.0.0
+        - 3.0.1
+        - 3.0.2
+        - 4.0.0
+        - 4.0.1
+        - 4.0.2
+        - 5.0.0-pre.1
+        - 5.0.0-pre.2
+        - 5.0.0
+        - 5.0.1
+        compatible:
+        - 4.0.2
+        verified: 4.0.2
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - 2d
+      - path
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637637511040000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/2d.git
+        revision: 6f9c488e4d487ead34ee4d516f0a2f4a911a8b25
+        path: 
+  m_LocalPackages:
+    m_LocalFileStatus: []
+m_ProjectPath: C:/Users/Faith/OneDrive/Desktop/Game/UnityProject/Game app/Packages
+m_EditorVersion: 2020.3.26f1 (7298b473bc1a)
+>>>>>>> main
