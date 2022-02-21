@@ -2,6 +2,7 @@
   "project_info": {
     "project_number": "641153071479",
     "project_id": "unitygame-ba69d",
+    "firebase_url": "https://unitygame-ba69d-default-rtdb.firebaseio.com/",
     "storage_bucket": "unitygame-ba69d.appspot.com"
   },
   "client": [
