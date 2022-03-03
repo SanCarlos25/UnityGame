@@ -10,5 +10,11 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void quitGame()
+    {
+        Debug.Log("Quit");
+        Application.Quit();
+    }
+
 
 }

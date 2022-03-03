@@ -34,6 +34,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        GameIsPaused = false;
     }
 
     public void OpenSettings()
@@ -44,6 +45,7 @@ public class PauseMenu : MonoBehaviour
         }
         else
         {
+
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
         }
         
@@ -54,6 +56,7 @@ public class PauseMenu : MonoBehaviour
         if (GameIsPaused)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            GameIsPaused = false;
         }
         else
         {
