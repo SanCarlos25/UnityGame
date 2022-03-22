@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using Firebase;
 using Firebase.Auth;
 using UnityEngine.UI;
@@ -15,7 +16,8 @@ public class FirebaseController : MonoBehaviour
 
     public GameObject NotificationMessage;
 
-    public Text errorMessage;
+    public Text ErrorMessage;
+    public Text ERROR; 
 
     Firebase.Auth.FirebaseAuth auth;
     Firebase.Auth.FirebaseUser user;
@@ -43,47 +45,75 @@ public class FirebaseController : MonoBehaviour
         });
     }
 
+    
+
     public void LoginUser()
     {
+        //We first check if there are any empty input 
         if (string.IsNullOrEmpty(Email_InputField.text) && string.IsNullOrEmpty(Password_InputField.text))
         {
             showNotificationMessage("Fields Empty! Please Input All Details");
             return;
         }
+        else if (string.IsNullOrEmpty(Email_InputField.text))
+        {
+            showNotificationMessage("Missing Email! ");
+        }
+        else if(string.IsNullOrEmpty(Password_InputField.text))
+        {
+            showNotificationMessage("Missing Password!");
+        }
 
-        //Do login 
+        //We call this function and have the input fields as arguments
         SignInUser(Email_InputField.text, Password_InputField.text);
-        SceneManager.LoadScene(sceneName:"Menu");
+
     }
 
     public void SignUpUser()
     {
+        //We check for any empty input fields
         if (string.IsNullOrEmpty(Email_InputField.text) && string.IsNullOrEmpty(Password_InputField.text))
         {
             showNotificationMessage("Fields Empty! Please Input All Details");
             return; 
         }
+        else if (string.IsNullOrEmpty(Email_InputField.text))
+        {
+            showNotificationMessage("Missing Email! ");
+        }
+        else if (string.IsNullOrEmpty(Password_InputField.text))
+        {
+            showNotificationMessage("Missing Password!");
+        }
 
-        //Do signup
+        //We call the create user function and have the input fields as arguments
         CreateUser(Email_InputField.text, Password_InputField.text);
-        SceneManager.LoadScene(sceneName:"Menu");
+      
     }
 
-    private void showNotificationMessage(string message)
+    //In this function, the parameter is a string containing the error message
+    public void showNotificationMessage(string message)
     {
-        errorMessage.text = "" + message;
-
+        //We set our text to the message
+        //And we open the NotificationPanel 
+        //To display message
+        ErrorMessage.text = message;
         NotificationMessage.SetActive(true);
     }
 
     public void CloseNotifPanel()
     {
-        errorMessage.text = "";
+        //We make our text empty
+        //And close the Notification panel
+        ErrorMessage.text = "";
         NotificationMessage.SetActive(false);
     }
 
+    //This function is used to create a user and 
+    //Takes two strings as parameters
     void CreateUser(string email, string password)
     {
+        //Application connects with Firebase database and creates a user
         auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWith(task => {
             if (task.IsCanceled)
             {
@@ -92,6 +122,8 @@ public class FirebaseController : MonoBehaviour
             }
             if (task.IsFaulted)
             {
+                //In case there are errors, we will extract
+                //What error it is
                 Debug.LogError("CreateUserWithEmailAndPasswordAsync encountered an error: " + task.Exception);
                 foreach (Exception exception in task.Exception.Flatten().InnerExceptions)
                 {
@@ -109,17 +141,26 @@ public class FirebaseController : MonoBehaviour
             Firebase.Auth.FirebaseUser newUser = task.Result;
             Debug.LogFormat("Firebase user created successfully: {0} ({1})",
                 newUser.DisplayName, newUser.UserId);
+
+            //Once user has been created successfully,
+            //We will load the next scene
+            SceneManager.LoadScene(sceneName: "Menu");
         });
     }
-
+   
+    //Function is used to sign in a user
+    //And takes in two string parameters
     public void SignInUser(string email, string password)
     {
+        //We connect to the Firebase and sign in the user
         auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWith(task => {
             if (task.IsCanceled)
             {
                 Debug.LogError("SignInWithEmailAndPasswordAsync was canceled.");
                 return;
             }
+
+            //We catch any errors that might occur
             if (task.IsFaulted)
             {
                 Debug.LogError("SignInWithEmailAndPasswordAsync encountered an error: " + task.Exception);
@@ -130,18 +171,26 @@ public class FirebaseController : MonoBehaviour
                     if (firebaseEx != null)
                     {
                         AuthError errorCode = (AuthError)firebaseEx.ErrorCode;
-                        showNotificationMessage(GetErrorMessage(errorCode));
+                        string msg = Errormsg(GetErrorMessage(errorCode));
+                        showNotificationMessage(msg); 
+                        //showNotificationMessage(GetErrorMessage(errorCode));
                     }
                 }
                 return;
             }
 
+            SceneManager.LoadScene(sceneName: "Menu");
+
+            //We successfully sign in the user
             Firebase.Auth.FirebaseUser newUser = task.Result;
             Debug.LogFormat("User signed in successfully: {0} ({1})",
                 newUser.DisplayName, newUser.UserId);
-        });
-    }
 
+        });
+
+    } 
+
+    //This function starts the Firebase connection
     void InitializeFirebase()
     {
         auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
@@ -162,16 +211,23 @@ public class FirebaseController : MonoBehaviour
             if (signedIn)
             {
                 Debug.Log("Signed in " + user.UserId);
-               // displayName = user.DisplayName ?? "";
+                // displayName = user.DisplayName ?? "";
                 //emailAddress = user.Email ?? "";
-               // photoUrl = user.PhotoUrl ?? "";
+                // photoUrl = user.PhotoUrl ?? "";
+
+                //Once user signs in, we load the next scene
+                SceneManager.LoadScene(sceneName: "Menu");
             }
         }
     }
 
-    private static string GetErrorMessage(AuthError errorCode)
+    //This function recieves the error code as a parameter
+    public static string GetErrorMessage(AuthError errorCode)
     {
-        string message = "";
+        string message = "Login Failed!";
+
+        //We use the switch case to know which 
+        //Error occurred to let the user know
         switch (errorCode)
         {
             case AuthError.AccountExistsWithDifferentCredentials:
@@ -180,17 +236,11 @@ public class FirebaseController : MonoBehaviour
             case AuthError.MissingPassword:
                 message = "Password Missing";
                 break;
-            case AuthError.WeakPassword:
-                message = "Weak Password";
-                break;
             case AuthError.WrongPassword:
                 message = "Incorrect Password";
                 break;
             case AuthError.EmailAlreadyInUse:
                 message = "Email is already in use";
-                break;
-            case AuthError.InvalidEmail:
-                message = "Invalid Email";
                 break;
             case AuthError.MissingEmail:
                 message = "Email Missing";
@@ -201,5 +251,29 @@ public class FirebaseController : MonoBehaviour
         }
         return message;
     }
+
+    public static string Errormsg(string message)
+    {
+        if(string.Compare(message, "Password Missing")==0)
+        {
+            message = ("Password Missing. ");
+        }
+
+        return message; 
+    }
+
+    //This user signs out a user 
+    public void signOut(FirebaseAuth auth)
+    {
+        auth.SignOut();
+        Debug.Log("Signing out user. ");
+        return;
+    }
+
+    public void OnApplicationQuit()
+    {
+        signOut(auth); 
+    }
+
 
 }
