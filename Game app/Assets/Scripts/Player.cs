@@ -52,12 +52,12 @@ public class Player : MonoBehaviour
         // right
         if(xAxis > 0)
         {
-            transform.localScale = new Vector2(-20, 20);
+            transform.localScale = new Vector2(-1, 1);
         }
         // left
         else if(xAxis < 0)
         {
-            transform.localScale = new Vector2(20, 20);
+            transform.localScale = new Vector2(1, 1);
         }
 
         // MOVEMENT
