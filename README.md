@@ -1,4 +1,4 @@
-### Project: **Sumar House**
+### Project: *Sumar House*
 
 ### Description 
 
@@ -9,10 +9,15 @@
 The app *Sumar House* is evaluated across the following attributes.
 
 - **Category:** Game
-- **Mobile:** This app would be primarily developed for mobile. 
+- **Mobile:** This app would is developed for mobile. 
 - **Market:** Any individual who needs to distract themselves and enjoy a simple puzzle game. 
 - **Habit:** This app can be used often because any individual can start playing at any given time. 
 - **Scope:** There is a large potential for the app if we create more complex levels and add more attributes like the score board which can create some competition between users. 
+
+
+## Table of Contents
+1. [Project](#Project)
+1. [Product Spec](#Product-Specs)
 
 ## Product Specs 
 
