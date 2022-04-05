@@ -31,12 +31,12 @@
 ### 3. Navigation
 **Flow Navigation** (Screen to Screen) 
 
-*Login/Register -> Main Menu
-*Main Menu -> Character Selection 
-*Character Selection -> Play Screen 
-*Play Screen -> Paused Screen 
-*Play Screen -> Settings 
-*Play Screen -> Inventory 
+* Login/Register -> Main Menu
+* Main Menu -> Character Selection 
+* Character Selection -> Play Screen 
+* Play Screen -> Paused Screen 
+* Play Screen -> Settings 
+* Play Screen -> Inventory 
 
 
 
