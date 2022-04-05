@@ -20,13 +20,13 @@
 * Score Board Screen will show users who have the fastest time in completing a specific level.
 
 ### 2. Screen Archetypes
-*Login 
-*Main Menu
-*Character Selection 
-*Play Screen 
-*Paused Screen 
-*Settings 
-*Inventory 
+* Login 
+* Main Menu
+* Character Selection 
+* Play Screen 
+* Paused Screen 
+* Settings 
+* Inventory 
 
 ### 3. Navigation
 **Flow Navigation** (Screen to Screen) 
