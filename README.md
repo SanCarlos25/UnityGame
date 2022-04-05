@@ -4,7 +4,7 @@
 
 *Sumar House* is a 2D puzzle adventure game built on Unity. Users are able to register and login to our application to get access the game. The information is saved on a Firebase Database. 
 
-##Product Specs 
+## Product Specs 
 
 ### 1. User Stories (Required and Optional)
 **Required Stories**
