@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     {
         // fetch rb2D from the game object
         rb = GetComponent<Rigidbody2D>();
+        //fetch animator component
         animator = GetComponent<Animator>();
 
     }
