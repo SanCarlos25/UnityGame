@@ -28,7 +28,7 @@
 *Settings 
 *Inventory 
 
-###3. Navigation
+### 3. Navigation
 **Flow Navigation** (Screen to Screen) 
 
 *Login/Register -> Main Menu
