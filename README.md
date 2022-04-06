@@ -57,7 +57,7 @@ The app *Sumar House* is evaluated across the following attributes.
 * Play Screen -> Inventory 
 
 ## Wireframes 
-<img src="wireframe.jpg" width=600>
+<img src="Screenshot (6).png" width=600>
 
 ### App Walkthough GIF
 
