@@ -2,7 +2,7 @@
 
 ### Description 
 
-*Sumar House* is a 2D puzzle adventure game built on Unity. Users are able to register and login to our application to get access the game. The information is saved on a Firebase Database. 
+*Sumar House* is a 2D puzzle game in the 32-bit style built on Unity. The goal of the game is to escape the room by solving puzzles. Users are able to register and login to our application to get access the game. The information is saved on a Firebase Database. 
 
 
 ### App Evaluation
@@ -33,6 +33,9 @@ The app *Sumar House* is evaluated across the following attributes.
 **Optional Stories**
 
 * Score Board Screen will show users who have the fastest time in completing a specific level.
+* Help Screen will show users a tutorial on how to do basic movement 
+* Checkpoints will help the user save the progress of the game and can return to a previous saved checkpoint 
+* Characters will have dialog 
 
 ### 2. Screen Archetypes
 * Login 
@@ -53,7 +56,8 @@ The app *Sumar House* is evaluated across the following attributes.
 * Play Screen -> Settings 
 * Play Screen -> Inventory 
 
-
+## Wireframes 
+<img src="wireframe.jpg" width=600>
 
 ### App Walkthough GIF
 
