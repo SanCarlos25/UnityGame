@@ -17,7 +17,7 @@ public class JoystickMovement : MonoBehaviour
     {
         // assigning joystick original position 
         joystickOrignialPosition = joystickBackground.transform.position;
-        // assigning joystick radius
+        // storing the radius of the joystick backgrount to the joystickradius variable
         joystickRadius = joystickBackground.GetComponent<RectTransform>().sizeDelta.y / 8;
     }
 
@@ -34,13 +34,12 @@ public class JoystickMovement : MonoBehaviour
     // called when user drags finger on screen
     public void Drag(BaseEventData baseEventData)
     {
-        // get drag position
+        // get drag position using pointerEventData
         PointerEventData pointerEventData = baseEventData as PointerEventData;
         Vector2 dragPosition = pointerEventData.position;
         joystickVector = (dragPosition - joystickTouchPosition).normalized;
 
         float joystickDistance = Vector2.Distance(dragPosition, joystickTouchPosition);
-
         // makes sure the joystick only moves within the joystick background
         if(joystickDistance < joystickRadius)
         {
