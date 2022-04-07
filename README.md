@@ -1,23 +1,24 @@
-### Project: *Sumar House*
-
+# *Sumer House*
 ### Description 
 
-*Sumar House* is a 2D puzzle game in the 32-bit style built on Unity. The goal of the game is to escape the room by solving puzzles. Users are able to register and login to our application to get access the game. The information is saved on a Firebase Database. 
+*Sumer House* is a 2D puzzle game in the 32-bit style built on Unity. The goal of the game is to escape the room by solving puzzles. Users are able to register and login to our application to get access the game. The information is saved on a Firebase Database. 
 
 
 ### App Evaluation
-The app *Sumar House* is evaluated across the following attributes.
+The app *Sumer House* is evaluated across the following attributes.
 
 - **Category:** Game
-- **Mobile:** This app would is developed for mobile. 
+- **Mobile:** This app is developed for mobile use only. 
 - **Market:** Any individual who needs to distract themselves and enjoy a simple puzzle game. 
-- **Habit:** This app can be used often because any individual can start playing at any given time. 
-- **Scope:** There is a large potential for the app if we create more complex levels and add more attributes like the score board which can create some competition between users. 
+- **Habit:** This app can be used at any time an individual wants to play. 
+- **Scope:** There is a large potential for the app if we create more complex levels and add more attributes a score board which can create some competition between users. 
 
 
 ## Table of Contents
 1. [Project](#Project)
-1. [Product Spec](#Product-Specs)
+2. [Product Spec](#Product-Specs)
+3. [Wireframes](#Wireframes)
+4. [App Walkthrough](#App-Walkthrough-GIF)   
 
 ## Product Specs 
 
@@ -27,7 +28,7 @@ The app *Sumar House* is evaluated across the following attributes.
 - [x]  Main Menu screen can access Play Screen and Settings Screen 
 - [x]  In the Play Screen, the user can move around and move other objects.
 - [x]  In the Settings Screen, the user can adjust the game volume. 
-- [x]  In the Paused Screen, will allow access to the Settings Screen. 
+- [x]  In the Paused Screen, will allow access to the Settings Screen and allow user to return to Main Menu.  
 - [x]  Player inventory will show the items collected during the game. 
  
 **Optional Stories**
@@ -38,7 +39,7 @@ The app *Sumar House* is evaluated across the following attributes.
 * Characters will have dialog 
 
 ### 2. Screen Archetypes
-* Login 
+* Login/Register 
 * Main Menu
 * Character Selection 
 * Play Screen 
@@ -53,8 +54,9 @@ The app *Sumar House* is evaluated across the following attributes.
 * Main Menu -> Character Selection 
 * Character Selection -> Play Screen 
 * Play Screen -> Paused Screen 
-* Play Screen -> Settings 
 * Play Screen -> Inventory 
+* Paused Screen -> Settings
+* Paused Screen -> Main Menu 
 
 ## Wireframes 
 <img src="Screenshot (6).png" width=600>
