@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public JoystickMovement movementJoystick;
     public float playerSpeed;
     public Animator animator;
+    public static int Selected_character;
 
     private Rigidbody2D rb;
     private string currentAnimaton;
@@ -29,6 +30,9 @@ public class Player : MonoBehaviour
         //fetch animator component
         animator = GetComponent<Animator>();
 
+        // Gets selected character from SkinManager
+        Selected_character = SkinManager.character_choice;
+        //Debug.Log("Selected_character = " + Selected_character);
     }
 
     // Update is called once per frame
@@ -42,6 +46,7 @@ public class Player : MonoBehaviour
         animator.SetFloat("yMovement", Mathf.Abs(yAxis));
         animator.SetFloat("yDirectional", yAxis);
         animator.SetFloat("xDirectional", xAxis);
+
         
     }
     
