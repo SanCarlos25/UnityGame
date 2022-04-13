@@ -72,20 +72,23 @@ public class Player : MonoBehaviour
             if (Mathf.Abs(xAxis) > .7)
             {
 
-                ChangeAnimationState("Woman1_WalkingSide");
+                //ChangeAnimationState("Woman1_WalkingSide");
+                ChangeAnimationState("PinkHairWoman_WalkingSide");
                 direction = PLAYER_HORIZONTAL;
             }
             // walking up
             if (yAxis > .7)
             {
-                ChangeAnimationState("Woman1_WalkingBack");
+                //ChangeAnimationState("Woman1_WalkingBack");
+                ChangeAnimationState("PinkHairWoman_WalkingBack");
                 direction = PLAYER_UP;
 
             }
             // walking down
             if (yAxis < -.7)
             {
-                ChangeAnimationState("Woman1_WalkingFront");
+                //ChangeAnimationState("Woman1_WalkingFront");
+                ChangeAnimationState("PinkHairWoman_WalkingFront");
                 direction = PLAYER_DOWN;
             }
         }
@@ -98,17 +101,20 @@ public class Player : MonoBehaviour
             // idle left/right
             if(direction == PLAYER_HORIZONTAL)
             {
-                ChangeAnimationState("Woman1_IdleSide");
+                //ChangeAnimationState("Woman1_IdleSide");
+                ChangeAnimationState("PinkHairWoman_IdleSide");
+
             }
             // idle facing back
             if(direction == PLAYER_UP)
             {
-                ChangeAnimationState("Woman1_IdleBack");
+                //ChangeAnimationState("Woman1_IdleBack");
+                ChangeAnimationState("PinkHairWoman_IdleBack");
             }
             // idle facing front
             if(direction == PLAYER_DOWN)
             {
-                ChangeAnimationState("Woman1_IdleFront");
+                ChangeAnimationState("PinkHairWoman_Idle");
             }
         }
     }
