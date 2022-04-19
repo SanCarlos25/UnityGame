@@ -7,15 +7,12 @@ public class SkinManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] characters;
+    public static int character_choice;
 
     public void ChangeCharacter(int index)
     {
-        for(int i = 0; i < characters.Length; i++)
-        {
-            characters[i].SetActive(false);
-        }
-
-        characters[index].SetActive(true);
+        character_choice = index;
+        //Debug.Log("Character Choice = " + character_choice);
     }
 
 
