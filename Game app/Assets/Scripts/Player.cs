@@ -31,8 +31,10 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
 
         // Gets selected character from SkinManager
+    
         Selected_character = SkinManager.character_choice;
         //Debug.Log("Selected_character = " + Selected_character);
+        
     }
 
     // Update is called once per frame
