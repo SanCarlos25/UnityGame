@@ -51,6 +51,61 @@ public class Player : MonoBehaviour
 
         
     }
+
+    void CharacterMovement(string WalkingSide, string WalkingUp, string WalkingDown, string IdleSide, string IdleBack, string IdleFront)
+    {
+        // MOVEMENT
+            // move the player if the joystick is being moved
+            if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
+            {
+                rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
+                
+                // ANIMATION
+                // walking left/right
+                if (Mathf.Abs(xAxis) > .7)
+                {
+
+                    ChangeAnimationState(WalkingSide);
+                    direction = PLAYER_HORIZONTAL;
+                }
+                // walking up
+                if (yAxis > .7)
+                {
+                    ChangeAnimationState(WalkingUp);
+                    direction = PLAYER_UP;
+
+                }
+                // walking down
+                if (yAxis < -.7)
+                {
+                    ChangeAnimationState(WalkingDown);
+                    direction = PLAYER_DOWN;
+                }
+            }
+            // stop the player from moving if the joystick is not being moved
+            else
+            {
+                rb.velocity = Vector2.zero;
+
+                // ANIMATION
+                // idle left/right
+                if(direction == PLAYER_HORIZONTAL)
+                {
+                    ChangeAnimationState(IdleSide);
+
+                }
+                // idle facing back
+                if(direction == PLAYER_UP)
+                {
+                    ChangeAnimationState(IdleBack);
+                }
+                // idle facing front
+                if(direction == PLAYER_DOWN)
+                {
+                    ChangeAnimationState(IdleFront);
+                }
+            }
+    }
     
     // Physics based time step loop
     // For executing physics and movement
@@ -71,57 +126,7 @@ public class Player : MonoBehaviour
 
         if(Selected_character == 0)
         {
-            // MOVEMENT
-            // move the player if the joystick is being moved
-            if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
-            {
-                rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-                
-                // ANIMATION
-                // walking left/right
-                if (Mathf.Abs(xAxis) > .7)
-                {
-
-                    ChangeAnimationState("Woman1_WalkingSide");
-                    direction = PLAYER_HORIZONTAL;
-                }
-                // walking up
-                if (yAxis > .7)
-                {
-                    ChangeAnimationState("Woman1_WalkingBack");
-                    direction = PLAYER_UP;
-
-                }
-                // walking down
-                if (yAxis < -.7)
-                {
-                    ChangeAnimationState("Woman1_WalkingFront");
-                    direction = PLAYER_DOWN;
-                }
-            }
-            // stop the player from moving if the joystick is not being moved
-            else
-            {
-                rb.velocity = Vector2.zero;
-
-                // ANIMATION
-                // idle left/right
-                if(direction == PLAYER_HORIZONTAL)
-                {
-                    ChangeAnimationState("Woman1_IdleSide");
-
-                }
-                // idle facing back
-                if(direction == PLAYER_UP)
-                {
-                    ChangeAnimationState("Woman1_IdleBack");
-                }
-                // idle facing front
-                if(direction == PLAYER_DOWN)
-                {
-                    ChangeAnimationState("Woman1_IdleFront");
-                }
-            }
+            CharacterMovement("Woman1_WalkingSide","Woman1_WalkingBack","Woman1_WalkingFront","Woman1_IdleSide","Woman1_IdleBack","Woman1_IdleFront");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if(Selected_character == 1) 
