@@ -31,8 +31,10 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
 
         // Gets selected character from SkinManager
+    
         Selected_character = SkinManager.character_choice;
         //Debug.Log("Selected_character = " + Selected_character);
+        
     }
 
     // Update is called once per frame
@@ -48,6 +50,61 @@ public class Player : MonoBehaviour
         animator.SetFloat("xDirectional", xAxis);
 
         
+    }
+
+    void CharacterMovement(string WalkingSide, string WalkingUp, string WalkingDown, string IdleSide, string IdleBack, string IdleFront)
+    {
+        // MOVEMENT
+            // move the player if the joystick is being moved
+            if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
+            {
+                rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
+                
+                // ANIMATION
+                // walking left/right
+                if (Mathf.Abs(xAxis) > .7)
+                {
+
+                    ChangeAnimationState(WalkingSide);
+                    direction = PLAYER_HORIZONTAL;
+                }
+                // walking up
+                if (yAxis > .7)
+                {
+                    ChangeAnimationState(WalkingUp);
+                    direction = PLAYER_UP;
+
+                }
+                // walking down
+                if (yAxis < -.7)
+                {
+                    ChangeAnimationState(WalkingDown);
+                    direction = PLAYER_DOWN;
+                }
+            }
+            // stop the player from moving if the joystick is not being moved
+            else
+            {
+                rb.velocity = Vector2.zero;
+
+                // ANIMATION
+                // idle left/right
+                if(direction == PLAYER_HORIZONTAL)
+                {
+                    ChangeAnimationState(IdleSide);
+
+                }
+                // idle facing back
+                if(direction == PLAYER_UP)
+                {
+                    ChangeAnimationState(IdleBack);
+                }
+                // idle facing front
+                if(direction == PLAYER_DOWN)
+                {
+                    ChangeAnimationState(IdleFront);
+                }
+            }
     }
     
     // Physics based time step loop
@@ -69,319 +126,38 @@ public class Player : MonoBehaviour
 
         if(Selected_character == 0)
         {
-            // MOVEMENT
-            // move the player if the joystick is being moved
-            if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
-            {
-                rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-                
-                // ANIMATION
-                // walking left/right
-                if (Mathf.Abs(xAxis) > .7)
-                {
-
-                    ChangeAnimationState("Woman1_WalkingSide");
-                    direction = PLAYER_HORIZONTAL;
-                }
-                // walking up
-                if (yAxis > .7)
-                {
-                    ChangeAnimationState("Woman1_WalkingBack");
-                    direction = PLAYER_UP;
-
-                }
-                // walking down
-                if (yAxis < -.7)
-                {
-                    ChangeAnimationState("Woman1_WalkingFront");
-                    direction = PLAYER_DOWN;
-                }
-            }
-            // stop the player from moving if the joystick is not being moved
-            else
-            {
-                rb.velocity = Vector2.zero;
-
-                // ANIMATION
-                // idle left/right
-                if(direction == PLAYER_HORIZONTAL)
-                {
-                    ChangeAnimationState("Woman1_IdleSide");
-
-                }
-                // idle facing back
-                if(direction == PLAYER_UP)
-                {
-                    ChangeAnimationState("Woman1_IdleBack");
-                }
-                // idle facing front
-                if(direction == PLAYER_DOWN)
-                {
-                    ChangeAnimationState("Woman1_IdleFront");
-                }
-            }
+            CharacterMovement("Woman1_WalkingSide","Woman1_WalkingBack","Woman1_WalkingFront","Woman1_IdleSide","Woman1_IdleBack","Woman1_IdleFront");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if(Selected_character == 1) 
         {
-            // MOVEMENT
-            // move the player if the joystick is being moved
-            if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
-            {
-                rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-                
-                // ANIMATION
-                // walking left/right
-                if (Mathf.Abs(xAxis) > .7)
-                {
-
-                    //ChangeAnimationState("Woman1_WalkingSide");
-                    ChangeAnimationState("PinkHairWoman_WalkingSide");
-                    direction = PLAYER_HORIZONTAL;
-                }
-                // walking up
-                if (yAxis > .7)
-                {
-                    //ChangeAnimationState("Woman1_WalkingBack");
-                    ChangeAnimationState("PinkHairWoman_WalkingBack");
-                    direction = PLAYER_UP;
-
-                }
-                // walking down
-                if (yAxis < -.7)
-                {
-                    //ChangeAnimationState("Woman1_WalkingFront");
-                    ChangeAnimationState("PinkHairWoman_WalkingFront");
-                    direction = PLAYER_DOWN;
-                }
-            }
-            // stop the player from moving if the joystick is not being moved
-            else
-            {
-                rb.velocity = Vector2.zero;
-
-                // ANIMATION
-                // idle left/right
-                if(direction == PLAYER_HORIZONTAL)
-                {
-                    //ChangeAnimationState("Woman1_IdleSide");
-                    ChangeAnimationState("PinkHairWoman_IdleSide");
-
-                }
-                // idle facing back
-                if(direction == PLAYER_UP)
-                {
-                    //ChangeAnimationState("Woman1_IdleBack");
-                    ChangeAnimationState("PinkHairWoman_IdleBack");
-                }
-                // idle facing front
-                if(direction == PLAYER_DOWN)
-                {
-                    ChangeAnimationState("PinkHairWoman_Idle");
-                }
-            }
+            CharacterMovement("PinkHairWoman_WalkingSide","PinkHairWoman_WalkingBack","PinkHairWoman_WalkingFront","PinkHairWoman_IdleSide","PinkHairWoman_IdleBack","PinkHairWoman_Idle");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if(Selected_character == 2)
         {
-            // MOVEMENT
-            // move the player if the joystick is being moved
-            if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
-            {
-                rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-                
-                // ANIMATION
-                // walking left/right
-                if (Mathf.Abs(xAxis) > .7)
-                {
-                    ChangeAnimationState("LongBeardMan_WalkingSide");
-                    direction = PLAYER_HORIZONTAL;
-                }
-                // walking up
-                if (yAxis > .7)
-                {
-                    //ChangeAnimationState("Woman1_WalkingBack");
-                    ChangeAnimationState("LongBeardMan_WalkingUp");
-                    direction = PLAYER_UP;
-
-                }
-                // walking down
-                if (yAxis < -.7)
-                {
-                    //ChangeAnimationState("Woman1_WalkingFront");
-                    ChangeAnimationState("LongBeardMan_WalkingDown");
-                    direction = PLAYER_DOWN;
-                }
-            }
-            // stop the player from moving if the joystick is not being moved
-            else
-            {
-                rb.velocity = Vector2.zero;
-
-                // ANIMATION
-                // idle left/right
-                if(direction == PLAYER_HORIZONTAL)
-                {
-                    //ChangeAnimationState("Woman1_IdleSide");
-                    ChangeAnimationState("LongBeardMan_IdleSide");
-
-                }
-                // idle facing back
-                if(direction == PLAYER_UP)
-                {
-                    //ChangeAnimationState("Woman1_IdleBack");
-                    ChangeAnimationState("LongBeardMan_IdleBack");
-                }
-                // idle facing front
-                if(direction == PLAYER_DOWN)
-                {
-                    ChangeAnimationState("LongBeardMan_IdleSide");
-                }
-            }
+            CharacterMovement("LongBeardMan_WalkingSide","LongBeardMan_WalkingUp","LongBeardMan_WalkingDown","LongBeardMan_IdleSide","LongBeardMan_IdleBack","LongBeardMan_IdleFront");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if(Selected_character == 3)
         {
-           // MOVEMENT
-            // move the player if the joystick is being moved
-            if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
-            {
-                rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-                
-                // ANIMATION
-                // walking left/right
-                if (Mathf.Abs(xAxis) > .7)
-                {
-                    ChangeAnimationState("ShortBeardMan_WalkingSide");
-                    direction = PLAYER_HORIZONTAL;
-                }
-                // walking up
-                if (yAxis > .7)
-                {
-                    //ChangeAnimationState("Woman1_WalkingBack");
-                    ChangeAnimationState("ShortBeardMan_WalkingUp");
-                    direction = PLAYER_UP;
-
-                }
-                // walking down
-                if (yAxis < -.7)
-                {
-                    //ChangeAnimationState("Woman1_WalkingFront");
-                    ChangeAnimationState("ShortBeardMan_WalkingDown");
-                    direction = PLAYER_DOWN;
-                }
-            }
-            // stop the player from moving if the joystick is not being moved
-            else
-            {
-                rb.velocity = Vector2.zero;
-
-                // ANIMATION
-                // idle left/right
-                if(direction == PLAYER_HORIZONTAL)
-                {
-                    //ChangeAnimationState("Woman1_IdleSide");
-                    ChangeAnimationState("ShortBeardMan_IdleSide");
-
-                }
-                // idle facing back
-                if(direction == PLAYER_UP)
-                {
-                    //ChangeAnimationState("Woman1_IdleBack");
-                    ChangeAnimationState("ShortBeardMan_IdleBack");
-                }
-                // idle facing front
-                if(direction == PLAYER_DOWN)
-                {
-                    ChangeAnimationState("ShortBeardMan_IdleSide");
-                }
-            } 
+            CharacterMovement("ShortBeardMan_WalkingSide","ShortBeardMan_WalkingUp","ShortBeardMan_WalkingDown","ShortBeardMan_IdleSide","ShortBeardMan_IdleBack","ShortBeardMan_IdleFront");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if(Selected_character == 4)
         {
-            if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
-            {
-                rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-
-                if (Mathf.Abs(xAxis) > .7)
-                {
-                    ChangeAnimationState("ManWithHat_WalkingSide");
-                    direction = PLAYER_HORIZONTAL;
-                }
-                if (yAxis > .7)
-                {
-                    ChangeAnimationState("ManWithHat_WalkingUp");
-                    direction = PLAYER_UP;
-                }
-                if (yAxis < -.7)
-                {
-                    ChangeAnimationState("ManWithHat_WalkingDown");
-                    direction = PLAYER_DOWN;
-                }
-            }
-            else
-            {
-                rb.velocity = Vector2.zero;
-
-                if(direction == PLAYER_HORIZONTAL)
-                {
-                    ChangeAnimationState("ManWithHat_IdleSide");
-
-                }
-                if(direction == PLAYER_UP)
-                {
-                    ChangeAnimationState("ManWithHat_IdleBack");
-                }
-                if(direction == PLAYER_DOWN)
-                {
-                    ChangeAnimationState("ManWithHat_IdleSide");
-                }
-            } 
+            CharacterMovement("ManWithHat_WalkingSide","ManWithHat_WalkingUp","ManWithHat_WalkingDown","ManWithHat_IdleSide","ManWithHat_IdleBack","ManWithHat_IdleFront");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if(Selected_character == 5)
         {
-            if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
-            {
-                rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-
-                if (Mathf.Abs(xAxis) > .7)
-                {
-                    ChangeAnimationState("BrownHairMan_WalkingSide");
-                    direction = PLAYER_HORIZONTAL;
-                }
-                if (yAxis > .7)
-                {
-                    ChangeAnimationState("BrownHairMan_WalkingUp");
-                    direction = PLAYER_UP;
-                }
-                if (yAxis < -.7)
-                {
-                    ChangeAnimationState("BrownHairMan_WalkingDown");
-                    direction = PLAYER_DOWN;
-                }
-            }
-            else
-            {
-                rb.velocity = Vector2.zero;
-
-                if(direction == PLAYER_HORIZONTAL)
-                {
-                    ChangeAnimationState("BrownHairMan_IdleSide");
-
-                }
-                if(direction == PLAYER_UP)
-                {
-                    ChangeAnimationState("BrownHairMan_IdleBack");
-                }
-                if(direction == PLAYER_DOWN)
-                {
-                    ChangeAnimationState("BrownHairMan_IdleSide");
-                }
-            } 
+            CharacterMovement("BrownHairMan_WalkingSide","BrownHairMan_WalkingUp","BrownHairMan_WalkingDown","BrownHairMan_IdleSide","BrownHairMan_IdleBack","BrownHairMan_IdleFront");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
+        else
+        {
+            CharacterMovement("Woman1_WalkingSide","Woman1_WalkingBack","Woman1_WalkingFront","Woman1_IdleSide","Woman1_IdleBack","Woman1_IdleFront");
+        }
     }
 
     // Animation Manager Function
