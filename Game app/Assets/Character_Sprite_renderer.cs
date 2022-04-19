@@ -18,6 +18,8 @@ public class Character_Sprite_renderer : MonoBehaviour
         Male2 = Resources.Load<Sprite>("Male1_61");
         Male3 = Resources.Load<Sprite>("Male1_83");
         int index = SkinManager.character_choice;
+        Debug.Log("Selected_character = " + index);
+        
         switch (index){
             case 0:
                 rend.sprite = Female1;
@@ -35,6 +37,7 @@ public class Character_Sprite_renderer : MonoBehaviour
                 rend.sprite = Male3;
                 break;
         }
+        
     }
 
 }
