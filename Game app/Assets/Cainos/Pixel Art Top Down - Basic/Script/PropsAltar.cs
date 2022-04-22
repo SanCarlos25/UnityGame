@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //when something get into the alta, make the runes glow
 namespace Cainos.PixelArtTopDown_Basic
@@ -14,9 +15,17 @@ namespace Cainos.PixelArtTopDown_Basic
         private Color curColor;
         private Color targetColor;
 
+        public GameObject levelCompleteUI;
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             targetColor = new Color(1, 1, 1, 1);
+            // trigger the end of the level
+            if (other.gameObject.CompareTag("TRIGGER_STONE"))
+            {
+                levelCompleteUI.SetActive(true);
+            }
+
         }
 
         private void OnTriggerExit2D(Collider2D other)
