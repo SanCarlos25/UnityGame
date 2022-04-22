@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject settingsMenuUI;
 
     // pauses the game
     public void PauseGame()
@@ -51,7 +52,9 @@ public class PauseMenu : MonoBehaviour
         {
             // Switches Scenes using LoadScene() buy getting the current build index of the
             // game scene (index 2) and adding 1 to get the settings scene (index 3)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            pauseMenuUI.SetActive(false);
+            settingsMenuUI.SetActive(true);
         }
         // handles opening settings when in the main menu scene
         else
@@ -71,9 +74,10 @@ public class PauseMenu : MonoBehaviour
         {
             // Switches Scenes using LoadScene() buy getting the current build index of the
             // settings scene (index 3) and subtracting 1 to get the game scene (index 2)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            settingsMenuUI.SetActive(false);
+            pauseMenuUI.SetActive(true);
             // sets the GameIsPauses values to false
-            GameIsPaused = false;
         }
         // handles closing the settings when in the main menu scene
         else
@@ -82,5 +86,11 @@ public class PauseMenu : MonoBehaviour
             // settings scene (index 3) and subtracting 3 to get the main menu scene (index 0)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
         }
+    }
+
+    // restarts the level by reloading the scene
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
