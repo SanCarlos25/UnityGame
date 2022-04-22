@@ -23,9 +23,18 @@ namespace Cainos.PixelArtTopDown_Basic
             // trigger the end of the level
             if (other.gameObject.CompareTag("TRIGGER_STONE"))
             {
-                levelCompleteUI.SetActive(true);
+                StartCoroutine(Wait());
+                
             }
 
+
+        }
+
+
+        IEnumerator Wait()
+        {
+            yield return new WaitForSeconds(1f);
+            levelCompleteUI.SetActive(true);
         }
 
         private void OnTriggerExit2D(Collider2D other)
