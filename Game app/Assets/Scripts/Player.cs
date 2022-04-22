@@ -34,7 +34,9 @@ public class Player : MonoBehaviour
     
         Selected_character = SkinManager.character_choice;
         //Debug.Log("Selected_character = " + Selected_character);
-        
+        DefaultAnimationStates();
+
+
     }
 
     // Update is called once per frame
@@ -127,11 +129,13 @@ public class Player : MonoBehaviour
         if(Selected_character == 0)
         {
             CharacterMovement("Woman1_WalkingSide","Woman1_WalkingBack","Woman1_WalkingFront","Woman1_IdleSide","Woman1_IdleBack","Woman1_IdleFront");
+            //ChangeAnimationState("Woman1_IdleFront");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if(Selected_character == 1) 
         {
             CharacterMovement("PinkHairWoman_WalkingSide","PinkHairWoman_WalkingBack","PinkHairWoman_WalkingFront","PinkHairWoman_IdleSide","PinkHairWoman_IdleBack","PinkHairWoman_Idle");
+            //ChangeAnimationState("PinkHairWoman_Idle");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if(Selected_character == 2)
@@ -170,5 +174,45 @@ public class Player : MonoBehaviour
         animator.Play(newAnimation);
         // and updates the current animation to the new animation
         currentAnimaton = newAnimation;
+    }
+
+    void DefaultAnimationStates()
+    {
+        if (Selected_character == 0)
+        {
+            ChangeAnimationState("Woman1_IdleFront");
+            //ChangeAnimationState("Woman1_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if (Selected_character == 1)
+        {
+            ChangeAnimationState("PinkHairWoman_Idle");
+            //ChangeAnimationState("PinkHairWoman_Idle");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if (Selected_character == 2)
+        {
+            ChangeAnimationState("LongBeardMan_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if (Selected_character == 3)
+        {
+            ChangeAnimationState("ShortBeardMan_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if (Selected_character == 4)
+        {
+            ChangeAnimationState("ManWithHat_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if (Selected_character == 5)
+        {
+            ChangeAnimationState("BrownHairMan_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else
+        {
+            ChangeAnimationState("Woman1_IdleFront");
+        }
     }
 }

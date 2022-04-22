@@ -14,8 +14,8 @@ public class SkinManager : MonoBehaviour
         // choses the character to the choice of the user.
         // This lags a bit in the initial run but works when moving the player
         character_choice = index;
-        
-        
+
+
         //Debug.Log("Character Choice = " + character_choice);
     }
 
