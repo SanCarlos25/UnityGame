@@ -9,11 +9,12 @@ public class FirstLevel : MonoBehaviour
     public static bool ChestClick = false;
     public GameObject Instructions;
     public GameObject Inventory;
+    public AudioSource audioSrc;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        audioSrc = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -44,6 +45,7 @@ public class FirstLevel : MonoBehaviour
     IEnumerator WaitForChestOpen()
     {
         yield return new WaitForSeconds(.5f);
+        
         Instructions.SetActive(true);
         Inventory.SetActive(true);
         Time.timeScale = 0f;
