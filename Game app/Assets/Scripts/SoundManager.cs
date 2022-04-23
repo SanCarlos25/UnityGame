@@ -5,13 +5,7 @@ using UnityEngine.UI;
 public class SoundManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] Button musicOn;
-    [SerializeField] Button musicOff;
     private bool muted = false;
-    void Start()
-    {
-        
-    }
 
     public void OnButtonPress()
     {
