@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//when something get into the alta, make the runes glow
+//when something get into the altar, make the runes glow
 namespace Cainos.PixelArtTopDown_Basic
 {
 
@@ -30,7 +30,7 @@ namespace Cainos.PixelArtTopDown_Basic
 
         }
 
-
+        // creates a delay before the LevelComplete UI is displayed
         IEnumerator Wait()
         {
             yield return new WaitForSeconds(1f);
