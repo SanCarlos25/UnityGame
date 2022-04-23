@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private string currentAnimaton;
+    private string currentFootstepState;
     private float xAxis;
     private float yAxis;
     private float direction;
@@ -70,7 +71,8 @@ public class Player : MonoBehaviour
         if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
         {
             rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-            audioSrc.Play();
+            FootstepsManager("Walking");
+            //audioSrc.Play();
             // ANIMATION
             // walking left/right
             if (Mathf.Abs(xAxis) > .7)
@@ -102,10 +104,11 @@ public class Player : MonoBehaviour
         else
         {
             rb.velocity = Vector2.zero;
-            if (!audioSrc.isPlaying)
+            FootstepsManager("Idle");
+            /*if (!audioSrc.isPlaying)
             {
                 audioSrc.Stop();
-            }
+            }*/
             // ANIMATION
             // idle left/right
             if(direction == PLAYER_HORIZONTAL)
@@ -126,7 +129,6 @@ public class Player : MonoBehaviour
 
     }
 
-    
     // Animation Manager Function
     void ChangeAnimationState(string newAnimation)
     {
@@ -137,5 +139,26 @@ public class Player : MonoBehaviour
         animator.Play(newAnimation);
         // and updates the current animation to the new animation
         currentAnimaton = newAnimation;
+    }
+
+    void FootstepsManager(string newState)
+    {
+        // checks if the passed in string is the same as the current state
+        if (currentFootstepState == newState) return;
+
+        // if the passed in string is "Walking" then play the walking audio
+        if (newState == "Walking")
+        {
+            audioSrc.Play();
+        }
+        // if the passed in string is "Idle" then stop the walking audio
+        if (newState == "Idle")
+        {
+            audioSrc.Stop();
+        }
+
+        // updates the current state to the passed in state
+        currentFootstepState = newState;
+
     }
 }
