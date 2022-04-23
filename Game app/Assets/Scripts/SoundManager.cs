@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class SoundManager : MonoBehaviour
 {
-    // Start is called before the first frame update
     private bool muted = false;
 
     public void OnButtonPress()

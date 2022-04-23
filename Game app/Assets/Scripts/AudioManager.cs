@@ -6,15 +6,6 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
-    /* private void Awake()
-     {
-         GameObject[] musicObj = GameObject.FindGameObjectsWithTag("BGM");
-         if (musicObj.Length > 1)
-         {
-             Destroy(this.gameObject);
-         }
-         DontDestroyOnLoad(this.gameObject);
-     }*/
     private static AudioManager backgroundmusic;
 
     private void Awake()
@@ -26,7 +17,16 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            Destroy(backgroundmusic);
+            Destroy(gameObject);
         }
     }
+    /*private void Awake()
+    {
+        GameObject[] musicObj = GameObject.FindGameObjectsWithTag("BGM");
+        if (musicObj.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(this.gameObject);
+    }*/
 }
