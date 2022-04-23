@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+[RequireComponent(typeof(AudioSource))]
 
 // Player Script
 public class Player : MonoBehaviour
@@ -11,6 +13,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private string currentAnimaton;
+    private string currentFootstepState;
     private float xAxis;
     private float yAxis;
     private float direction;
@@ -21,6 +24,7 @@ public class Player : MonoBehaviour
     const float PLAYER_UP = 2;
     const float PLAYER_DOWN = 3;
 
+    public AudioSource audioSrc;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,8 +32,9 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         //fetch animator component
         animator = GetComponent<Animator>();
-
+        audioSrc = GetComponent<AudioSource>();
     }
+
 
     // Update is called once per frame
     // For input checks
@@ -42,6 +47,7 @@ public class Player : MonoBehaviour
         animator.SetFloat("yMovement", Mathf.Abs(yAxis));
         animator.SetFloat("yDirectional", yAxis);
         animator.SetFloat("xDirectional", xAxis);
+
         
     }
     
@@ -66,7 +72,8 @@ public class Player : MonoBehaviour
         if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
         {
             rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-            
+            FootstepsManager("Walking");
+            //audioSrc.Play();
             // ANIMATION
             // walking left/right
             if (Mathf.Abs(xAxis) > .7)
@@ -74,26 +81,35 @@ public class Player : MonoBehaviour
 
                 ChangeAnimationState("Woman1_WalkingSide");
                 direction = PLAYER_HORIZONTAL;
+                
+               
             }
             // walking up
             if (yAxis > .7)
             {
                 ChangeAnimationState("Woman1_WalkingBack");
                 direction = PLAYER_UP;
-
+                
+                
             }
             // walking down
             if (yAxis < -.7)
             {
                 ChangeAnimationState("Woman1_WalkingFront");
                 direction = PLAYER_DOWN;
+
+               
             }
         }
         // stop the player from moving if the joystick is not being moved
         else
         {
             rb.velocity = Vector2.zero;
-
+            FootstepsManager("Idle");
+            /*if (!audioSrc.isPlaying)
+            {
+                audioSrc.Stop();
+            }*/
             // ANIMATION
             // idle left/right
             if(direction == PLAYER_HORIZONTAL)
@@ -111,6 +127,7 @@ public class Player : MonoBehaviour
                 ChangeAnimationState("Woman1_IdleFront");
             }
         }
+
     }
 
     // Animation Manager Function
@@ -123,5 +140,26 @@ public class Player : MonoBehaviour
         animator.Play(newAnimation);
         // and updates the current animation to the new animation
         currentAnimaton = newAnimation;
+    }
+
+    void FootstepsManager(string newState)
+    {
+        // checks if the passed in string is the same as the current state
+        if (currentFootstepState == newState) return;
+
+        // if the passed in string is "Walking" then play the walking audio
+        if (newState == "Walking")
+        {
+            audioSrc.Play();
+        }
+        // if the passed in string is "Idle" then stop the walking audio
+        if (newState == "Idle")
+        {
+            audioSrc.Stop();
+        }
+
+        // updates the current state to the passed in state
+        currentFootstepState = newState;
+
     }
 }

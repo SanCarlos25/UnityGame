@@ -35,4 +35,6 @@ public class MusicPlayer : MonoBehaviour
     {
         PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }
+
+    
 }
