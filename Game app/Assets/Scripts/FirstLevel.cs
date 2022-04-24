@@ -48,7 +48,7 @@ public class FirstLevel : MonoBehaviour
         
         Instructions.SetActive(true);
         Inventory.SetActive(true);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
 
     }
 
