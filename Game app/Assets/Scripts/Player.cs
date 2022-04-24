@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public JoystickMovement movementJoystick;
     public float playerSpeed;
     public Animator animator;
+    public static int Selected_character;
 
     private Rigidbody2D rb;
     private string currentAnimaton;
@@ -33,6 +34,14 @@ public class Player : MonoBehaviour
         //fetch animator component
         animator = GetComponent<Animator>();
         audioSrc = GetComponent<AudioSource>();
+
+        // Gets selected character from SkinManager
+    
+        Selected_character = SkinManager.character_choice;
+        //Debug.Log("Selected_character = " + Selected_character);
+        DefaultAnimationStates();
+
+
     }
 
 
@@ -49,6 +58,62 @@ public class Player : MonoBehaviour
         animator.SetFloat("xDirectional", xAxis);
 
         
+    }
+
+    void CharacterMovement(string WalkingSide, string WalkingUp, string WalkingDown, string IdleSide, string IdleBack, string IdleFront)
+    {
+        // MOVEMENT
+            // move the player if the joystick is being moved
+            if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
+            {
+                rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
+                FootstepsManager("Walking");
+                // ANIMATION
+                // walking left/right
+                if (Mathf.Abs(xAxis) > .7)
+                {
+
+                    ChangeAnimationState(WalkingSide);
+                    direction = PLAYER_HORIZONTAL;
+                }
+                // walking up
+                if (yAxis > .7)
+                {
+                    ChangeAnimationState(WalkingUp);
+                    direction = PLAYER_UP;
+
+                }
+                // walking down
+                if (yAxis < -.7)
+                {
+                    ChangeAnimationState(WalkingDown);
+                    direction = PLAYER_DOWN;
+                }
+            }
+            // stop the player from moving if the joystick is not being moved
+            else
+            {
+                rb.velocity = Vector2.zero;
+                FootstepsManager("Idle");
+
+                // ANIMATION
+                // idle left/right
+                if(direction == PLAYER_HORIZONTAL)
+                {
+                    ChangeAnimationState(IdleSide);
+
+                }
+                // idle facing back
+                if(direction == PLAYER_UP)
+                {
+                    ChangeAnimationState(IdleBack);
+                }
+                // idle facing front
+                if(direction == PLAYER_DOWN)
+                {
+                    ChangeAnimationState(IdleFront);
+                }
+            }
     }
     
     // Physics based time step loop
@@ -67,65 +132,42 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector2(1, 1);
         }
 
-        // MOVEMENT
-        // move the player if the joystick is being moved
-        if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
+
+        if(Selected_character == 0)
         {
-            rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-            FootstepsManager("Walking");
-            //audioSrc.Play();
-            // ANIMATION
-            // walking left/right
-            if (Mathf.Abs(xAxis) > .7)
-            {
-
-                ChangeAnimationState("Woman1_WalkingSide");
-                direction = PLAYER_HORIZONTAL;
-                
-               
-            }
-            // walking up
-            if (yAxis > .7)
-            {
-                ChangeAnimationState("Woman1_WalkingBack");
-                direction = PLAYER_UP;
-                
-                
-            }
-            // walking down
-            if (yAxis < -.7)
-            {
-                ChangeAnimationState("Woman1_WalkingFront");
-                direction = PLAYER_DOWN;
-
-               
-            }
+            CharacterMovement("Woman1_WalkingSide","Woman1_WalkingBack","Woman1_WalkingFront","Woman1_IdleSide","Woman1_IdleBack","Woman1_IdleFront");
+            //ChangeAnimationState("Woman1_IdleFront");
         }
-        // stop the player from moving if the joystick is not being moved
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if(Selected_character == 1) 
+        {
+            CharacterMovement("PinkHairWoman_WalkingSide","PinkHairWoman_WalkingBack","PinkHairWoman_WalkingFront","PinkHairWoman_IdleSide","PinkHairWoman_IdleBack","PinkHairWoman_Idle");
+            //ChangeAnimationState("PinkHairWoman_Idle");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if(Selected_character == 2)
+        {
+            CharacterMovement("LongBeardMan_WalkingSide","LongBeardMan_WalkingUp","LongBeardMan_WalkingDown","LongBeardMan_IdleSide","LongBeardMan_IdleBack","LongBeardMan_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if(Selected_character == 3)
+        {
+            CharacterMovement("ShortBeardMan_WalkingSide","ShortBeardMan_WalkingUp","ShortBeardMan_WalkingDown","ShortBeardMan_IdleSide","ShortBeardMan_IdleBack","ShortBeardMan_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if(Selected_character == 4)
+        {
+            CharacterMovement("ManWithHat_WalkingSide","ManWithHat_WalkingUp","ManWithHat_WalkingDown","ManWithHat_IdleSide","ManWithHat_IdleBack","ManWithHat_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if(Selected_character == 5)
+        {
+            CharacterMovement("BrownHairMan_WalkingSide","BrownHairMan_WalkingUp","BrownHairMan_WalkingDown","BrownHairMan_IdleSide","BrownHairMan_IdleBack","BrownHairMan_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
         else
         {
-            rb.velocity = Vector2.zero;
-            FootstepsManager("Idle");
-            /*if (!audioSrc.isPlaying)
-            {
-                audioSrc.Stop();
-            }*/
-            // ANIMATION
-            // idle left/right
-            if(direction == PLAYER_HORIZONTAL)
-            {
-                ChangeAnimationState("Woman1_IdleSide");
-            }
-            // idle facing back
-            if(direction == PLAYER_UP)
-            {
-                ChangeAnimationState("Woman1_IdleBack");
-            }
-            // idle facing front
-            if(direction == PLAYER_DOWN)
-            {
-                ChangeAnimationState("Woman1_IdleFront");
-            }
+            CharacterMovement("Woman1_WalkingSide","Woman1_WalkingBack","Woman1_WalkingFront","Woman1_IdleSide","Woman1_IdleBack","Woman1_IdleFront");
         }
 
     }
@@ -160,6 +202,44 @@ public class Player : MonoBehaviour
 
         // updates the current state to the passed in state
         currentFootstepState = newState;
-
+    }
+    void DefaultAnimationStates()
+    {
+        if (Selected_character == 0)
+        {
+            ChangeAnimationState("Woman1_IdleFront");
+            //ChangeAnimationState("Woman1_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if (Selected_character == 1)
+        {
+            ChangeAnimationState("PinkHairWoman_Idle");
+            //ChangeAnimationState("PinkHairWoman_Idle");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if (Selected_character == 2)
+        {
+            ChangeAnimationState("LongBeardMan_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if (Selected_character == 3)
+        {
+            ChangeAnimationState("ShortBeardMan_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if (Selected_character == 4)
+        {
+            ChangeAnimationState("ManWithHat_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else if (Selected_character == 5)
+        {
+            ChangeAnimationState("BrownHairMan_IdleFront");
+        }
+        //--------------------------------------------------------------------------------------------------------------------------------------------
+        else
+        {
+            ChangeAnimationState("Woman1_IdleFront");
+        }
     }
 }
