@@ -252,7 +252,7 @@ public class Player : MonoBehaviour
 
         // updates the current state to the passed in state
         currentFootstepState = newState;
-
+    }
     void DefaultAnimationStates()
     {
         if (Selected_character == 0)
