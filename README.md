@@ -55,8 +55,11 @@ The app *Sumer House* is evaluated across the following attributes.
 * Character Selection -> Play Screen 
 * Play Screen -> Paused Screen 
 * Play Screen -> Inventory 
+* Play Screem -> Level Complete
 * Paused Screen -> Settings
 * Paused Screen -> Main Menu 
+* Level Complete -> Play Screen (restart level)
+* Level Complete -> Main Menu
 
 ## Wireframes 
 <img src="Screenshot (6).png" width=600>
