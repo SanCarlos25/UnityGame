@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
             if (movementJoystick.joystickVector.y != 0 || movementJoystick.joystickVector.x != 0)
             {
                 rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-                
+                FootstepsManager("Walking");
                 // ANIMATION
                 // walking left/right
                 if (Mathf.Abs(xAxis) > .7)
@@ -94,6 +94,7 @@ public class Player : MonoBehaviour
             else
             {
                 rb.velocity = Vector2.zero;
+                FootstepsManager("Idle");
 
                 // ANIMATION
                 // idle left/right
@@ -134,35 +135,6 @@ public class Player : MonoBehaviour
 
         if(Selected_character == 0)
         {
-            rb.velocity = new Vector2(movementJoystick.joystickVector.x * playerSpeed, movementJoystick.joystickVector.y * playerSpeed);
-            FootstepsManager("Walking");
-            //audioSrc.Play();
-            // ANIMATION
-            // walking left/right
-            if (Mathf.Abs(xAxis) > .7)
-            {
-
-                ChangeAnimationState("Woman1_WalkingSide");
-                direction = PLAYER_HORIZONTAL;
-                
-               
-            }
-            // walking up
-            if (yAxis > .7)
-            {
-                ChangeAnimationState("Woman1_WalkingBack");
-                direction = PLAYER_UP;
-                
-                
-            }
-            // walking down
-            if (yAxis < -.7)
-            {
-                ChangeAnimationState("Woman1_WalkingFront");
-                direction = PLAYER_DOWN;
-
-               
-            }
             CharacterMovement("Woman1_WalkingSide","Woman1_WalkingBack","Woman1_WalkingFront","Woman1_IdleSide","Woman1_IdleBack","Woman1_IdleFront");
             //ChangeAnimationState("Woman1_IdleFront");
         }
@@ -195,28 +167,6 @@ public class Player : MonoBehaviour
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else
         {
-            rb.velocity = Vector2.zero;
-            FootstepsManager("Idle");
-            /*if (!audioSrc.isPlaying)
-            {
-                audioSrc.Stop();
-            }*/
-            // ANIMATION
-            // idle left/right
-            if(direction == PLAYER_HORIZONTAL)
-            {
-                ChangeAnimationState("Woman1_IdleSide");
-            }
-            // idle facing back
-            if(direction == PLAYER_UP)
-            {
-                ChangeAnimationState("Woman1_IdleBack");
-            }
-            // idle facing front
-            if(direction == PLAYER_DOWN)
-            {
-                ChangeAnimationState("Woman1_IdleFront");
-            }
             CharacterMovement("Woman1_WalkingSide","Woman1_WalkingBack","Woman1_WalkingFront","Woman1_IdleSide","Woman1_IdleBack","Woman1_IdleFront");
         }
 
