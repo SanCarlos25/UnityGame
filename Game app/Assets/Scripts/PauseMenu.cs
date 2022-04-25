@@ -38,6 +38,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         // updates GameIsPaused value to true
         GameIsPaused = false;
+        FirstLevel.ChestClick = false;
         // Switches Scenes using LoadScene() buy getting the current build index of the
         // game scene (index 2) and subracting in by 2 to get to the main menu (index 0)
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);

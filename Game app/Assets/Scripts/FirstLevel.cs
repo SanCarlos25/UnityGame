@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+[RequireComponent(typeof(AudioSource))]
 
 public class FirstLevel : MonoBehaviour
 {
@@ -9,12 +11,15 @@ public class FirstLevel : MonoBehaviour
     public static bool ChestClick = false;
     public GameObject Instructions;
     public GameObject Inventory;
-    public AudioSource audioSrc;
+    public AudioSource AudioSrc;
+    public AudioClip chest;
+    public AudioClip scroll;
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSrc = GetComponent<AudioSource>();
+        AudioSrc = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -37,6 +42,7 @@ public class FirstLevel : MonoBehaviour
     void OpenChest()
     {
         //Chest_Closed.SetActive(false);
+        AudioSrc.PlayOneShot(chest);
         Chest_Open.SetActive(true);
         ChestClick = true;
     }
@@ -45,7 +51,7 @@ public class FirstLevel : MonoBehaviour
     IEnumerator WaitForChestOpen()
     {
         yield return new WaitForSeconds(.5f);
-        
+        AudioSrc.PlayOneShot(scroll);
         Instructions.SetActive(true);
         Inventory.SetActive(true);
         //Time.timeScale = 0f;
