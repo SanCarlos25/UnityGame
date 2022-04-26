@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+[RequireComponent(typeof(AudioSource))]
 
 //when something get into the altar, make the runes glow
-namespace Cainos.PixelArtTopDown_Basic
-{
 
-    public class PropsAltar : MonoBehaviour
+public class PropsAltar : MonoBehaviour
     {
         public List<SpriteRenderer> runes;
         public float lerpSpeed;
@@ -16,15 +16,24 @@ namespace Cainos.PixelArtTopDown_Basic
         private Color targetColor;
 
         public GameObject levelCompleteUI;
+        private AudioSource audioSrc;
+        public AudioClip LevelCompleteAudio;
+        public bool FirstLevelComplete = false;
 
-        private void OnTriggerEnter2D(Collider2D other)
+    void Start()
+    {
+        audioSrc = GetComponent<AudioSource>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
         {
             targetColor = new Color(1, 1, 1, 1);
             // trigger the end of the level
             if (other.gameObject.CompareTag("TRIGGER_STONE"))
             {
+                FirstLevelComplete = true;
                 StartCoroutine(Wait());
-                
+
             }
 
 
@@ -33,8 +42,12 @@ namespace Cainos.PixelArtTopDown_Basic
         // creates a delay before the LevelComplete UI is displayed
         IEnumerator Wait()
         {
+            //audioSrc = GetComponent<AudioSource>();
+            
             yield return new WaitForSeconds(1f);
+            audioSrc.PlayOneShot(LevelCompleteAudio, .5f);
             levelCompleteUI.SetActive(true);
+            FirstLevelComplete = false;
         }
 
         private void OnTriggerExit2D(Collider2D other)
@@ -52,4 +65,4 @@ namespace Cainos.PixelArtTopDown_Basic
             }
         }
     }
-}
+

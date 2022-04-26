@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+[RequireComponent(typeof(AudioSource))]
 
 public class FirstLevel : MonoBehaviour
 {
@@ -9,7 +11,10 @@ public class FirstLevel : MonoBehaviour
     public static bool ChestClick = false;
     public GameObject Instructions;
     public GameObject Inventory;
-    public AudioSource audioSrc;
+    private AudioSource audioSrc;
+    public AudioClip ChestOpening;
+    public AudioClip InstructionsOpening;
+    public AudioClip LevelCompleAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +33,7 @@ public class FirstLevel : MonoBehaviour
     {
         // opens chest and triggers UI If the chest hasnt been opened
         if (ChestClick) return;
+        audioSrc.PlayOneShot(ChestOpening, .7f);
         OpenChest();
         // waits for the animation of the chest opening before activiating UI
         StartCoroutine(WaitForChestOpen());
@@ -45,7 +51,7 @@ public class FirstLevel : MonoBehaviour
     IEnumerator WaitForChestOpen()
     {
         yield return new WaitForSeconds(.5f);
-        
+        audioSrc.PlayOneShot(InstructionsOpening);
         Instructions.SetActive(true);
         Inventory.SetActive(true);
         Time.timeScale = 0f;

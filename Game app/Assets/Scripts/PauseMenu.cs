@@ -40,6 +40,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
         // Switches Scenes using LoadScene() buy getting the current build index of the
         // game scene (index 2) and subracting in by 2 to get to the main menu (index 0)
+        FirstLevel.ChestClick = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
 
     }
@@ -91,6 +92,7 @@ public class PauseMenu : MonoBehaviour
     // restarts the level by reloading the scene
     public void RestartLevel()
     {
+        FirstLevel.ChestClick = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
