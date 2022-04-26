@@ -54,7 +54,7 @@ public class FirstLevel : MonoBehaviour
         audioSrc.PlayOneShot(InstructionsOpening);
         Instructions.SetActive(true);
         Inventory.SetActive(true);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
 
     }
 
