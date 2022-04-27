@@ -503,7 +503,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 137
-        y: 535
+        y: 536
         width: 13
         height: 34
       alignment: 7
@@ -544,8 +544,8 @@ TextureImporter:
       name: Male1_6
       rect:
         serializedVersion: 2
-        x: 201
-        y: 534
+        x: 200
+        y: 536
         width: 13
         height: 34
       alignment: 7
@@ -566,7 +566,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 233
-        y: 534
+        y: 535
         width: 13
         height: 35
       alignment: 7
@@ -671,7 +671,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 136
-        y: 487
+        y: 488
         width: 15
         height: 34
       alignment: 7
@@ -755,7 +755,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9
-        y: 438
+        y: 439
         width: 15
         height: 34
       alignment: 7
@@ -796,8 +796,8 @@ TextureImporter:
       name: Male1_18
       rect:
         serializedVersion: 2
-        x: 73
-        y: 438
+        x: 72
+        y: 439
         width: 15
         height: 34
       alignment: 7
@@ -818,7 +818,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 104
-        y: 439
+        y: 440
         width: 15
         height: 34
       alignment: 7

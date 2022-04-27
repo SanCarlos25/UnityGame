@@ -415,8 +415,8 @@ TextureImporter:
       name: Female2_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 535
+        x: 39
+        y: 536
         width: 15
         height: 35
       alignment: 7
@@ -500,7 +500,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 168
-        y: 535
+        y: 536
         width: 15
         height: 35
       alignment: 7
@@ -689,7 +689,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 486
+        y: 487
         width: 15
         height: 37
       alignment: 7
@@ -731,7 +731,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 8
-        y: 437
+        y: 439
         width: 15
         height: 34
       alignment: 7
@@ -815,7 +815,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 135
-        y: 439
+        y: 440
         width: 16
         height: 33
       alignment: 7
@@ -857,7 +857,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 439
+        y: 440
         width: 16
         height: 33
       alignment: 7
@@ -878,7 +878,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 233
-        y: 438
+        y: 439
         width: 15
         height: 34
       alignment: 7
