@@ -8,13 +8,19 @@ public class Inventory : MonoBehaviour
     public GameObject InventoryUI;
     public GameObject InstructionsUI;
     public GameObject Instructions_In_Inventory;
+    public GameObject RiddleUserInterface;
+
+    public GameObject RiddleInInventory;
     public static bool ChestStatus;
+    public static bool RiddleStatus;
 
     public void OpenInventory()
     {
         // displays the inventory UI
         InventoryUI.SetActive(true);
         CheckInstructionsStatus();
+        CheckRiddleStatus();
+
         // pauses time
         Time.timeScale = 0f;
     }
@@ -48,6 +54,30 @@ public class Inventory : MonoBehaviour
         else
         {
             Instructions_In_Inventory.SetActive(false);
+        }
+    }
+
+    public void OpenRiddle()
+    {
+        RiddleUserInterface.SetActive(true);
+    }
+
+    public void CloseRiddle()
+    {
+        RiddleUserInterface.SetActive(false);
+        CheckRiddleStatus();
+    }
+
+    public void CheckRiddleStatus()
+    {
+        RiddleStatus = RiddleUI.RiddleTrigger;
+        if (RiddleStatus)
+        {
+            RiddleInInventory.SetActive(true);
+        }
+        else
+        {
+            RiddleInInventory.SetActive(false);
         }
     }
 

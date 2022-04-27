@@ -41,6 +41,8 @@ public class PauseMenu : MonoBehaviour
         // Switches Scenes using LoadScene() buy getting the current build index of the
         // game scene (index 2) and subracting in by 2 to get to the main menu (index 0)
         FirstLevel.ChestClick = false;
+        AltarUI.ShrineTrigger = false;
+        RiddleUI.RiddleTrigger = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
 
     }
@@ -94,6 +96,8 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         FirstLevel.ChestClick = false;
+        AltarUI.ShrineTrigger = false;
+        RiddleUI.RiddleTrigger = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
