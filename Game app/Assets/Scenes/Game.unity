@@ -5218,6 +5218,8 @@ MonoBehaviour:
   InventoryUI: {fileID: 1765178767}
   InstructionsUI: {fileID: 1868441110}
   Instructions_In_Inventory: {fileID: 1529765763}
+  RiddleUserInterface: {fileID: 2007658511}
+  RiddleInInventory: {fileID: 1395158091}
 --- !u!114 &112906631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6159,12 +6161,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143557879}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -935.98206, y: -594.5524, z: 112.27727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1755577387}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &145092397 stripped
 Transform:
@@ -9430,12 +9432,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304779987}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -935.98206, y: -594.5524, z: 112.27727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1755577387}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &307521643
 GameObject:
@@ -9951,6 +9953,8 @@ MonoBehaviour:
   InventoryUI: {fileID: 1765178767}
   InstructionsUI: {fileID: 1868441110}
   Instructions_In_Inventory: {fileID: 1529765763}
+  RiddleUserInterface: {fileID: 2007658511}
+  RiddleInInventory: {fileID: 1395158091}
 --- !u!114 &316039564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9995,9 +9999,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 316039567}
-        m_TargetAssemblyTypeName: RiddleUI, Assembly-CSharp
-        m_MethodName: CloseUI
+      - m_Target: {fileID: 316039563}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: CloseRiddle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10007,9 +10011,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 143557880}
+      - m_Target: {fileID: 687887093}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 316039563}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: OpenInventory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16048,12 +16064,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687887092}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -935.98206, y: -594.5524, z: 112.27727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1755577387}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &690811215
 PrefabInstance:
@@ -22681,6 +22697,8 @@ MonoBehaviour:
   InventoryUI: {fileID: 1765178767}
   InstructionsUI: {fileID: 1868441110}
   Instructions_In_Inventory: {fileID: 1529765763}
+  RiddleUserInterface: {fileID: 2007658511}
+  RiddleInInventory: {fileID: 1395158091}
 --- !u!1001 &948530896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28556,12 +28574,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176763266}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -935.98206, y: -594.5524, z: 112.27727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1755577387}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1177282666
 GameObject:
@@ -28683,12 +28701,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177282666}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -935.98206, y: -594.5524, z: 112.27727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1755577387}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1178554277
 PrefabInstance:
@@ -38804,14 +38822,13 @@ GameObject:
   - component: {fileID: 1395158096}
   - component: {fileID: 1395158095}
   - component: {fileID: 1395158094}
-  - component: {fileID: 1395158093}
   m_Layer: 5
-  m_Name: Riddle
+  m_Name: Riddle Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1395158092
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38831,19 +38848,6 @@ RectTransform:
   m_AnchoredPosition: {x: -123, y: 94.8}
   m_SizeDelta: {x: 22.5641, y: 24.4283}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1395158093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395158091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c155b8dbc74aef445a5f7d6c9f0aaa2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RiddleUserInterface: {fileID: 2007658511}
 --- !u!114 &1395158094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38858,7 +38862,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryUI: {fileID: 1765178767}
   InstructionsUI: {fileID: 1868441110}
-  Instructions_In_Inventory: {fileID: 1395158091}
+  Instructions_In_Inventory: {fileID: 1529765763}
+  RiddleUserInterface: {fileID: 2007658511}
+  RiddleInInventory: {fileID: 1395158091}
 --- !u!114 &1395158095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38905,7 +38911,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1395158094}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
-        m_MethodName: OpenInstructions
+        m_MethodName: OpenRiddle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41468,7 +41474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1529765764
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41609,6 +41615,8 @@ MonoBehaviour:
   InventoryUI: {fileID: 1765178767}
   InstructionsUI: {fileID: 1868441110}
   Instructions_In_Inventory: {fileID: 1529765763}
+  RiddleUserInterface: {fileID: 2007658511}
+  RiddleInInventory: {fileID: 1395158091}
 --- !u!1 &1529829218
 GameObject:
   m_ObjectHideFlags: 0
@@ -44640,6 +44648,8 @@ MonoBehaviour:
   InventoryUI: {fileID: 1765178767}
   InstructionsUI: {fileID: 1868441110}
   Instructions_In_Inventory: {fileID: 1529765763}
+  RiddleUserInterface: {fileID: 0}
+  RiddleInInventory: {fileID: 0}
 --- !u!114 &1678730887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45057,6 +45067,8 @@ MonoBehaviour:
   InventoryUI: {fileID: 1765178767}
   InstructionsUI: {fileID: 1868441110}
   Instructions_In_Inventory: {fileID: 1529765763}
+  RiddleUserInterface: {fileID: 2007658511}
+  RiddleInInventory: {fileID: 1395158091}
 --- !u!1001 &1693060813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46743,6 +46755,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1753736636}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1755577386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1755577387}
+  m_Layer: 0
+  m_Name: Sound Effects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1755577387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755577386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 935.98206, y: 594.5524, z: -112.27727}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 143557881}
+  - {fileID: 1177282668}
+  - {fileID: 687887094}
+  - {fileID: 1880439326}
+  - {fileID: 1862765475}
+  - {fileID: 304779989}
+  - {fileID: 1819483300}
+  - {fileID: 1176763268}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1760289176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5281063671732302502, guid: c5c395a83c3338d46bd52e936cf46245,
@@ -47003,7 +47053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1765178768
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48850,12 +48900,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1819483298}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -935.98206, y: -594.5524, z: 112.27727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1755577387}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1821634057 stripped
 Transform:
@@ -49701,12 +49751,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862765473}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -935.98206, y: -594.5524, z: 112.27727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1755577387}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1862860117
 GameObject:
@@ -50069,12 +50119,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880439324}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -935.98206, y: -594.5524, z: 112.27727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1755577387}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1881263211
 PrefabInstance:
@@ -56479,7 +56529,7 @@ GameObject:
   - component: {fileID: 2007658513}
   - component: {fileID: 2007658515}
   m_Layer: 5
-  m_Name: Riddle
+  m_Name: Riddle UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
