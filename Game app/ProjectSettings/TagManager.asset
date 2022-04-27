@@ -7,6 +7,9 @@ TagManager:
   - TRIGGER_STONE
   - CHEST_OPEN
   - CHEST_CLOSED
+  - BGM
+  - CIRCLE
+  - PLAYER
   layers:
   - Default
   - TransparentFX
