@@ -1,5 +1,14 @@
 # *Sumer House*
-### Description 
+
+### Table of Contents
+1. [Description](#Description)
+2. [Installation](#Installation) 
+3. [Product Spec](#Product-Specs)
+4. [Wireframes](#Wireframes)
+5. [Game Walkthrough](#Game-Walkthrough)
+  
+
+## Description 
 
 *Sumer House* is a 2D puzzle game in the 32-bit style built on Unity. The goal of the game is to escape the room by solving puzzles. Users are able to register and login to our application to get access the game. The information is saved on a Firebase Database. 
 
@@ -13,12 +22,15 @@ The app *Sumer House* is evaluated across the following attributes.
 - **Habit:** This app can be used at any time an individual wants to play. 
 - **Scope:** There is a large potential for the app if we create more complex levels and add more attributes a score board which can create some competition between users. 
 
+## Installation Proccess 
 
-## Table of Contents
-1. [Project](#Project)
-2. [Product Spec](#Product-Specs)
-3. [Wireframes](#Wireframes)
-4. [App Walkthrough](#App-Walkthrough-GIF)   
+### Prerequisites 
+Download Unity and Unity Editor Version 2020.3.26f [Unity Download Link](https://unity3d.com/get-unity/download/archive)
+
+### Clone the repository
+~~~
+$ git clone https://github.com/SanCarlos25/UnityGame.git
+~~~
 
 ## Product Specs 
 
@@ -62,7 +74,13 @@ The app *Sumer House* is evaluated across the following attributes.
 * Level Complete -> Main Menu
 
 ## Wireframes 
-<img src="Screenshot (6).png" width=600>
+<img src="SumerHouseWireframes.png" width=600>
 
-### App Walkthough GIF
+## Game Walkthough
+<<img src= "SumerHouseWalkthrough.gif" >
+
+
+
+
+
 
