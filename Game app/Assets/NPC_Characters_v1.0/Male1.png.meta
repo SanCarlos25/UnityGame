@@ -290,6 +290,9 @@ TextureImporter:
   - first:
       213: 6991445662075712843
     second: Male1_95
+  - first:
+      213: -9181565571870822648
+    second: Male1_96
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -503,7 +506,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 137
-        y: 536
+        y: 535
         width: 13
         height: 34
       alignment: 7
@@ -545,7 +548,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 536
+        y: 535
         width: 13
         height: 34
       alignment: 7
@@ -2426,6 +2429,27 @@ TextureImporter:
       bones: []
       spriteID: b45f77299ca960160800000000000000
       internalID: 6991445662075712843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male1_96
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 435
+        width: 2
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80feea622c6849080800000000000000
+      internalID: -9181565571870822648
       vertices: []
       indices: 
       edges: []
