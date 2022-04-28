@@ -19,6 +19,7 @@ public class PropsAltar : MonoBehaviour
         private AudioSource audioSrc;
         public AudioClip LevelCompleteAudio;
         public bool FirstLevelComplete = false;
+        public GameObject glow;
 
     void Start()
     {
@@ -43,7 +44,7 @@ public class PropsAltar : MonoBehaviour
         IEnumerator Wait()
         {
             //audioSrc = GetComponent<AudioSource>();
-            
+            glow.SetActive(true);
             yield return new WaitForSeconds(1f);
             audioSrc.PlayOneShot(LevelCompleteAudio, .5f);
             levelCompleteUI.SetActive(true);

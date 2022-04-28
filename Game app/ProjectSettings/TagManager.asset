@@ -10,6 +10,7 @@ TagManager:
   - BGM
   - CIRCLE
   - PLAYER
+  - WOODEN_BOX
   layers:
   - Default
   - TransparentFX
