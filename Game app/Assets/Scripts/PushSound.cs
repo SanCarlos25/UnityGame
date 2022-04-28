@@ -15,12 +15,6 @@ public class PushSound : MonoBehaviour
     void Start()
     {
         audioSrc = GetComponent<AudioSource>();
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    private void Update()
-    {
-        //currentPushingState;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
