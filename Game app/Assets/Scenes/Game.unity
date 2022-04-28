@@ -42487,10 +42487,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1755577388}
+        m_TargetAssemblyTypeName: SourEffectsSlider, Assembly-CSharp
+        m_MethodName: UpdateSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1575365996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44407,6 +44419,8 @@ MonoBehaviour:
   InventoryUI: {fileID: 0}
   InstructionsUI: {fileID: 0}
   Instructions_In_Inventory: {fileID: 0}
+  RiddleUserInterface: {fileID: 0}
+  RiddleInInventory: {fileID: 0}
 --- !u!114 &1657937639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47239,6 +47253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1755577387}
+  - component: {fileID: 1755577388}
   m_Layer: 0
   m_Name: Sound Effects
   m_TagString: Untagged
@@ -47268,6 +47283,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1755577388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755577386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d3cb4f191f8c1469a72ce27ab52ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffectsSlider: {fileID: 1575221875}
+  soundEffectsAudio:
+  - {fileID: 143557880}
+  - {fileID: 75140121}
 --- !u!4 &1760289176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5281063671732302502, guid: c5c395a83c3338d46bd52e936cf46245,
