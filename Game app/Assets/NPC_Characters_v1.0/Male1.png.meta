@@ -523,7 +523,7 @@ TextureImporter:
       name: Male1_5
       rect:
         serializedVersion: 2
-        x: 170
+        x: 169
         y: 535
         width: 13
         height: 35
@@ -671,7 +671,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 136
-        y: 488
+        y: 487
         width: 15
         height: 34
       alignment: 7
@@ -754,7 +754,7 @@ TextureImporter:
       name: Male1_16
       rect:
         serializedVersion: 2
-        x: 9
+        x: 8
         y: 439
         width: 15
         height: 34
@@ -818,7 +818,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 104
-        y: 440
+        y: 439
         width: 15
         height: 34
       alignment: 7
