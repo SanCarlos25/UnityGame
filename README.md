@@ -2,7 +2,7 @@
 
 ### Table of Contents
 1. [Description](#Description)
-2. [Installation](#Installation) 
+2. [Installation](#Installation-Proccess) 
 3. [Product Spec](#Product-Specs)
 4. [Wireframes](#Wireframes)
 5. [Game Walkthrough](#Game-Walkthrough)
@@ -76,7 +76,7 @@ $ git clone https://github.com/SanCarlos25/UnityGame.git
 ## Wireframes 
 <img src="SumerHouseWireframes.png" width=600>
 
-## Game Walkthough
+## Game Walkthrough
 <<img src= "SumerHouseWalkthrough.gif" >
 
 
