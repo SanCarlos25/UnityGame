@@ -2539,7 +2539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementJoystick: {fileID: 312219844}
-  playerSpeed: 3
+  playerSpeed: 2
   animator: {fileID: 75140118}
   audioSrc: {fileID: 75140121}
 --- !u!50 &75140116
