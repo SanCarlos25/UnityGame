@@ -94,6 +94,7 @@ public class PauseMenu : MonoBehaviour
     // restarts the level by reloading the scene
     public void RestartLevel()
     {
+        // also resets all the one time triggers
         Time.timeScale = 1f;
         FirstLevel.ChestClick = false;
         AltarUI.ShrineTrigger = false;

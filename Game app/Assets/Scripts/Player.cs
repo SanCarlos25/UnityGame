@@ -132,17 +132,15 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector2(1, 1);
         }
 
-
+        // changes the spite animation depending on which player the user chose in the character selection scene
         if(Selected_character == 0)
         {
             CharacterMovement("Woman1_WalkingSide","Woman1_WalkingBack","Woman1_WalkingFront","Woman1_IdleSide","Woman1_IdleBack","Woman1_IdleFront");
-            //ChangeAnimationState("Woman1_IdleFront");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if(Selected_character == 1) 
         {
             CharacterMovement("PinkHairWoman_WalkingSide","PinkHairWoman_WalkingBack","PinkHairWoman_WalkingFront","PinkHairWoman_IdleSide","PinkHairWoman_IdleBack","PinkHairWoman_Idle");
-            //ChangeAnimationState("PinkHairWoman_Idle");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if(Selected_character == 2)
@@ -184,6 +182,7 @@ public class Player : MonoBehaviour
         currentAnimaton = newAnimation;
     }
 
+    // footstep manager function
     void FootstepsManager(string newState)
     {
         // checks if the passed in string is the same as the current state
@@ -203,18 +202,18 @@ public class Player : MonoBehaviour
         // updates the current state to the passed in state
         currentFootstepState = newState;
     }
+
+    // sets the default animation state depending on which character the user chose in the character selection scene
     void DefaultAnimationStates()
     {
         if (Selected_character == 0)
         {
             ChangeAnimationState("Woman1_IdleFront");
-            //ChangeAnimationState("Woman1_IdleFront");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if (Selected_character == 1)
         {
             ChangeAnimationState("PinkHairWoman_Idle");
-            //ChangeAnimationState("PinkHairWoman_Idle");
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------
         else if (Selected_character == 2)

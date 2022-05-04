@@ -15,7 +15,7 @@ public class ShrineAudio : MonoBehaviour
         audioSrc = GetComponent<AudioSource>();
     }
 
-
+    // plays the shrine audio if the user hasnt entered the area before
     private void OnTriggerEnter2D()
     {
         // opens chest and triggers UI If the chest hasnt been opened
