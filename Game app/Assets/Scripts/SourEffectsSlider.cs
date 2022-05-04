@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 
+// script no longer used in the project
 public class SourEffectsSlider : MonoBehaviour
 {
     private static readonly string FirstPlay = "FirstPlay";

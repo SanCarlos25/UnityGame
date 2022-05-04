@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// used to play audio when the user enters a certain area
 public class GraveyardAudio : MonoBehaviour
 {
     private AudioSource audioSrc;
@@ -13,10 +14,10 @@ public class GraveyardAudio : MonoBehaviour
         audioSrc = GetComponent<AudioSource>();
     }
 
-
+    // plays the audio when the user enters a certain area
     private void OnTriggerEnter2D()
     {
-        // opens chest and triggers UI If the chest hasnt been opened
+        // only plays on the first time entry
         if (!FirstTimeEntry) return;
         audioSrc.PlayOneShot(clip);
         FirstTimeEntry = false;

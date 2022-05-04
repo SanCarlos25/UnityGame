@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 [RequireComponent(typeof(AudioSource))]
 
+// Manages the chest opening
 public class FirstLevel : MonoBehaviour
 {
     public GameObject Chest_Open;

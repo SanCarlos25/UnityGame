@@ -6,7 +6,6 @@ using UnityEngine.Audio;
 [RequireComponent(typeof(AudioSource))]
 
 //when something get into the altar, make the runes glow
-
 public class PropsAltar : MonoBehaviour
     {
         public List<SpriteRenderer> runes;
@@ -26,6 +25,7 @@ public class PropsAltar : MonoBehaviour
         audioSrc = GetComponent<AudioSource>();
     }
 
+    // when the user puts the block with the light up characters in the altar, the level is complete
     private void OnTriggerEnter2D(Collider2D other)
         {
             targetColor = new Color(1, 1, 1, 1);
@@ -43,19 +43,21 @@ public class PropsAltar : MonoBehaviour
         // creates a delay before the LevelComplete UI is displayed
         IEnumerator Wait()
         {
-            //audioSrc = GetComponent<AudioSource>();
+            // returns all the one time triggers back to default
             glow.SetActive(true);
             yield return new WaitForSeconds(1f);
             audioSrc.PlayOneShot(LevelCompleteAudio, .5f);
             levelCompleteUI.SetActive(true);
             FirstLevelComplete = false;
         }
-
+        
+        // turns off the lights in the block
         private void OnTriggerExit2D(Collider2D other)
         {
             targetColor = new Color(1, 1, 1, 0);
         }
-
+        
+        // creates the slow fading/blinking light animation in the block
         private void Update()
         {
             curColor = Color.Lerp(curColor, targetColor, lerpSpeed * Time.deltaTime);
