@@ -77,9 +77,9 @@ $ git clone https://github.com/SanCarlos25/UnityGame.git
 <img src="SumerHouseWireframes.png" width=600>
 
 ## Game Walkthrough
-[![Youtube Walkthrough(1m30s)]](https://www.youtube.com/watch?v=bV6PEXOHkVc)
-Snippet of the Walkthrough:
-<img src= "SumerHouseWalkthrough.gif" >
+* Full 1m 30s Walkthrough: [Youtube Walkthrough](https://www.youtube.com/watch?v=bV6PEXOHkVc)
+* Short Snippet of the Walkthrough:
+* <img src= "SumerHouseWalkthrough.gif" >
 
 
 
