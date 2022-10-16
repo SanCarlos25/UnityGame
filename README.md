@@ -78,6 +78,7 @@ $ git clone https://github.com/SanCarlos25/UnityGame.git
 
 ## Game Walkthrough
 <<img src= "SumerHouseWalkthrough.gif" >
+[![Watch the video](![Sumer House Demo](https://user-images.githubusercontent.com/94029910/196024302-aedd29a6-e5e3-45e0-9593-b4654b61e748.PNG))](https://www.youtube.com/watch?v=bV6PEXOHkVc)
 
 
 
